@@ -27,10 +27,23 @@ class protector_postcommon_post_htmlpurify4guest extends ProtectorFilterAbstract
 			$config->set('Cache', 'SerializerPath', XOOPS_TRUST_PATH.'/modules/protector/configs');
 			$config->set('Core', 'Encoding', _CHARSET);
 			//$config->set('HTML', 'Doctype', 'HTML 4.01 Transitional');
-		}
+
 			$this->purifier = new HTMLPurifier($config);
 
 			$_POST = $this->purify_recursive( $_POST ) ;
+		}
+		else
+		{
+			$config = HTMLPurifier_Config::createDefault();
+			$config->set('Cache', 'SerializerPath', XOOPS_TRUST_PATH.'/cache/htmlpurifier/configs');
+			$config->set('Core', 'Encoding', _CHARSET);
+			//$config->set('HTML', 'Doctype', 'HTML 4.01 Transitional');
+
+			$this->purifier = new HTMLPurifier($config);
+
+			$_POST = $this->purify_recursive( $_POST ) ;
+		}
+
 	}
 
 
