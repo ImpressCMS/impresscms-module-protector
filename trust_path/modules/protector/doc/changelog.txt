@@ -1,0 +1,23 @@
+##:##====================================================================##:##
+- 2008/??/?? - New changes....
+
+##:##====================================================================##:##
+##:##ChangeLog version and translation.                                  ##:##
+##:##====================================================================##:##
+- 2008/06/19 - Unification of languages and ordered the constants:
+  (*) english (default base)
+  (+) arabic
+  (+) french
+  (+) german (ok) finished translation. (Credits - René Sato)
+  (=) ja_utf8 (ok) (GiJoe)
+  (=) japanese (ok) (GiJoe)
+  (+) persian
+  (+) polish
+  (+) portuguesebr (ok) finished translation. (Credits - Team X-Trad and GibaPhp)
+  (+) russian (Have problems in files, revision necessary)
+  (+) spanish
+  
+  Ps: If you find a mistake, get in touch. Several languages are adjusted 
+      but the translation is not complete. Only the german and portuguesebr
+	  are fully translated. GibaPhp
+##:##====================================================================##:##
