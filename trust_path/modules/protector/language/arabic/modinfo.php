@@ -5,16 +5,6 @@ $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:33
-define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
-define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
-define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-04-08 04:24:49
-define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions');
-
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
@@ -27,6 +17,7 @@ define($constpref."_DESC","Â–« «·»—‰«„Ã ÌÊ›— ·ﬂ Õ„«Ì… ÷œ ⁄„·Ì«  «·«Œ —«ﬁ «·„Œ ·›
 define($constpref."_ADMININDEX","«·—∆Ì”Ì…");
 define($constpref."_ADVISORY"," ›Õ’ «·Õ„«Ì…");
 define($constpref."_PREFIXMANAGER","«œ«—…  ﬁ«⁄œ… «·»Ì«‰« ");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions') ;
 
 // Configs
 define($constpref.'_GLOBAL_DISBL','„⁄ÿ· „ƒﬁ «');
@@ -37,6 +28,8 @@ define($constpref.'_RELIABLE_IPSDSC','÷⁄ »Ì‰ ﬂ· «Ì» Ê«Œ— ⁄·«„… | Ê⁄·«„… ^ ›Ì »œ«
 
 define($constpref.'_LOG_LEVEL','„” ÊÏ «·”Ã·');
 define($constpref.'_LOG_LEVELDSC','');
+
+define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
 
 define($constpref.'_LOGLEVEL0','·«ÌÊÃœ');
 define($constpref.'_LOGLEVEL15','»”Ìÿ');
@@ -88,11 +81,13 @@ define($constpref.'_OPT_NONE','·«‘Ì¡');
 define($constpref.'_OPT_SAN',' ⁄ﬁÌ„ «·«„—');
 define($constpref.'_OPT_EXIT','’›Õ… ›«—€… »Ì÷«¡');
 define($constpref.'_OPT_BIP','ÿ—œ «·«Ì»Ì');
+define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
 
 define($constpref.'_DOSOPT_NONE','·«‘Ì¡');
 define($constpref.'_DOSOPT_SLEEP','⁄œ „ «” Ã«»…');
 define($constpref.'_DOSOPT_EXIT','’›Õ… ›«—€… »Ì÷«¡');
 define($constpref.'_DOSOPT_BIP','ÿ—œ «·«Ì»Ì');
+define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
 define($constpref.'_DOSOPT_HTA','ÿ—œ »Ê«”ÿ… „·›.htaccess(·«’Õ«» «·Œ»—…)');
 
 define($constpref.'_BIP_EXCEPT','«·„Ã„Ê⁄… «· Ì ·‰ Ì „ ÿ—œÂ« «»œ«');
