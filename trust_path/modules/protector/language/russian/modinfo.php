@@ -5,16 +5,6 @@ $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:33
-define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
-define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
-define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-04-11 05:08:26
-define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions');
-
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
@@ -27,6 +17,7 @@ define($constpref."_DESC","Этот модуль защищает ваш сайт на базе XOOPS от различ
 define($constpref."_ADMININDEX","Главная");
 define($constpref."_ADVISORY","Подсказки");
 define($constpref."_PREFIXMANAGER","Управление префиксом БД");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions') ;
 
 // Configs
 define($constpref.'_GLOBAL_DISBL','Временно выключен');
@@ -38,21 +29,19 @@ define($constpref.'_RELIABLE_IPSDSC','Установите адреса при заходе для которых п
 define($constpref.'_LOG_LEVEL','Журнал событий');
 define($constpref.'_LOG_LEVELDSC','');
 
+define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
+
 define($constpref.'_LOGLEVEL0','Журнал отключен');
 define($constpref.'_LOGLEVEL15','Минимум событий');
 define($constpref.'_LOGLEVEL63','Минимум событий');
 define($constpref.'_LOGLEVEL255','Все события');
 
 define($constpref.'_HIJACK_TOPBIT','Защищенные биты IP для сеанса');
-define($constpref.'_HIJACK_TOPBITDSC','Анти-Налет Сеанса:<br />Значение по умолчанию 32 (бит). 
- (Все биты защищены)<br />Когда ваш IP не устойчив, установите диапазон IP числом битов.<br />(пример) Если ваш IP может двигаться в диапазон 192.168.0.0-192.168.0.255, установите 24 (бит) здесь');
+define($constpref.'_HIJACK_TOPBITDSC','Анти-Налет Сеанса:<br />Значение по умолчанию 32 (бит).  (Все биты защищены)<br />Когда ваш IP не устойчив, установите диапазон IP числом битов.<br />(пример) Если ваш IP может двигаться в диапазон 192.168.0.0-192.168.0.255, установите 24 (бит) здесь');
 define($constpref.'_HIJACK_DENYGP','Группы для которых изменение адреса в рамках одной сессии запрещено');
-define($constpref.'_HIJACK_DENYGPDSC','Борется с подстановкой сессий:<br />
-	Выберите группы для которых адрес в пределах одной сессии постоянен.<br />
-	(Рекомендуется всегда включать в список групп группу Администраторов сайта.)');
+define($constpref.'_HIJACK_DENYGPDSC','Борется с подстановкой сессий:<br />	Выберите группы для которых адрес в пределах одной сессии постоянен.<br />	(Рекомендуется всегда включать в список групп группу Администраторов сайта.)');
 define($constpref.'_SAN_NULLBYTE','Вычищать символ с нулевым кодом');
-define($constpref.'_SAN_NULLBYTEDSC','Заверщающий символ "\\0" часто используется в различных видах атак.<br />
-	Этот символ будет заменен на пробел.<br />(рекомендуется всегда включать данную настройку)');
+define($constpref.'_SAN_NULLBYTEDSC','Заверщающий символ "\\0" часто используется в различных видах атак.<br />	Этот символ будет заменен на пробел.<br />(рекомендуется всегда включать данную настройку)');
 define($constpref.'_DIE_NULLBYTE','Вычищать символ с нулевым кодом');
 define($constpref.'_DIE_NULLBYTEDSC','Заверщающий символ "\0" часто используется в различных видах атак.<br />(рекомендуется всегда включать данную настройку)');
 define($constpref.'_DIE_BADEXT','Прервать выполнение при загрузке опасного файла');
@@ -64,8 +53,7 @@ define($constpref.'_ISOCOM_ACTIONDSC','Выберите действие выполняемое при обнаруж
 define($constpref.'_UNION_ACTION','Действие при обнаружении ключевого слова UNION');
 define($constpref.'_UNION_ACTIONDSC','Выберите действие выполняемое при обнаружении ключевого слова UNION. "Очистка" предполагает заменение всех вхождений данного слова "UNI-ON". (Рекомендуется: Очистить)');
 define($constpref.'_ID_INTVAL','Принудительное преобразование целочисленых переменных (например id)');
-define($constpref.'_ID_INTVALDSC','Все запросы вида: "*id" будут возвращены как целые числа.<br />Этот параметр защищает вас от некоторых видов XSS и SQL Injections атак.<br />
-	Рекомендуется включить этот параметр и отключать только при возникновении проблем в использовании каких-либо модулей.');
+define($constpref.'_ID_INTVALDSC','Все запросы вида: "*id" будут возвращены как целые числа.<br />Этот параметр защищает вас от некоторых видов XSS и SQL Injections атак.<br />	Рекомендуется включить этот параметр и отключать только при возникновении проблем в использовании каких-либо модулей.');
 define($constpref.'_FILE_DOTDOT','Защита от Directroy Traversals');
 define($constpref.'_FILE_DOTDOTDSC','Удаляет все вхождения последовательности ".." из всех запросов выглядящих как Directory Traversals');
 
@@ -79,8 +67,7 @@ define($constpref.'_DOS_EXPIRE','Время ожидания для определения высокой нагрузки
 define($constpref.'_DOS_EXPIREDSC','Данное значение указывает время ожидания до обнуления счетчика запросов страницы ("Атака F5" и Роботы перегружающие сервер)');
 
 define($constpref.'_DOS_F5COUNT','Счетчик для "Атаки F5"');
-define($constpref.'_DOS_F5COUNTDSC','Защищает от DoS атак.<br />
-	Это значение указывает количество запросов страницы превышение которого за установленое ранее время ожидания распознается как преднамеренная атака.');
+define($constpref.'_DOS_F5COUNTDSC','Защищает от DoS атак.<br />	Это значение указывает количество запросов страницы превышение которого за установленое ранее время ожидания распознается как преднамеренная атака.');
 define($constpref.'_DOS_F5ACTION','Действие при обнаружении попытки перегрузки сервера');
 
 define($constpref.'_DOS_CRCOUNT','Счетчик для Роботов');
@@ -94,11 +81,13 @@ define($constpref.'_OPT_NONE','Ничего (только запись в журнале)');
 define($constpref.'_OPT_SAN','Очистка');
 define($constpref.'_OPT_EXIT','Пустой экран');
 define($constpref.'_OPT_BIP','Добавить адрес в черный список');
+define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
 
 define($constpref.'_DOSOPT_NONE','Ничего (только запись в журнале)');
 define($constpref.'_DOSOPT_SLEEP','Заснуть');
 define($constpref.'_DOSOPT_EXIT','Пустой экран');
 define($constpref.'_DOSOPT_BIP','Добавить адрес в черный список');
+define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
 define($constpref.'_DOSOPT_HTA','Запретить доступ используя .htaccess (экспериментально)');
 
 define($constpref.'_BIP_EXCEPT','Групы пользователей никогда не попадающие в черный список.');
@@ -113,6 +102,7 @@ define($constpref.'_SPAMURI4U','anti-SPAM: Колличество ссылок для пользователей'
 define($constpref.'_SPAMURI4UDSC','Если колличество ссылок  в сообщениях от пользователей (кроме Администраторов), превышает указанное, сообщение определяется как СПАМ.<br /> 0 - отключено.');
 define($constpref.'_SPAMURI4G','anti-SPAM: Колличество ссылок для гостей');
 define($constpref.'_SPAMURI4GDSC','Если колличество ссылок  в сообщениях от гостей, превышает указанное, сообщение определяется как СПАМ.<br />  0 - отключено.');
+
 
 }
 
