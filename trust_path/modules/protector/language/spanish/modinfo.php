@@ -5,16 +5,6 @@ $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:32
-define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
-define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
-define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-03-29 03:36:14
-define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions');
-
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
@@ -27,6 +17,7 @@ define($constpref."_DESC","Este módulo proteje tu sitio Xoops de varios tipos de
 define($constpref."_ADMININDEX","Centro de Protección");
 define($constpref."_ADVISORY","Asesor de Seguridad");
 define($constpref."_PREFIXMANAGER","Administrador de Prefijos");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions') ;
 
 // Configs
 define($constpref.'_GLOBAL_DISBL','Deshabilitado temporalmente');
@@ -37,6 +28,8 @@ define($constpref.'_RELIABLE_IPSDSC','Fijar IPs confiables separadas con | . ^ i
 
 define($constpref.'_LOG_LEVEL','Nivel de registro');
 define($constpref.'_LOG_LEVELDSC','');
+
+define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
 
 define($constpref.'_LOGLEVEL0','Ninguno');
 define($constpref.'_LOGLEVEL15','Callado');
@@ -88,11 +81,13 @@ define($constpref.'_OPT_NONE','Ninguna (sólo registro)');
 define($constpref.'_OPT_SAN','Limpieza');
 define($constpref.'_OPT_EXIT','Pantalla en Blanco');
 define($constpref.'_OPT_BIP','Bloquear IP');
+define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
 
 define($constpref.'_DOSOPT_NONE','Ninguna (sólo registro)');
 define($constpref.'_DOSOPT_SLEEP','Dormir');
 define($constpref.'_DOSOPT_EXIT','Pantalla en Blanco');
 define($constpref.'_DOSOPT_BIP','Bloquear IP');
+define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
 define($constpref.'_DOSOPT_HTA','NEGAR por .htaccess (experimental)');
 
 define($constpref.'_BIP_EXCEPT','Grupos nunca registrados como IP Malicioso');

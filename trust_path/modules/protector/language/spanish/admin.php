@@ -1,19 +1,6 @@
 <?php
 
 // mymenu
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-10-18 05:36:24
-define('_AM_LABEL_COMPACTLOG','Compact log');
-define('_AM_BUTTON_COMPACTLOG','Compact it!');
-define('_AM_JS_COMPACTLOGCONFIRM','Duplicated (IP,Type) records will be removed');
-define('_AM_LABEL_REMOVEALL','Remove all records');
-define('_AM_BUTTON_REMOVEALL','Remove all!');
-define('_AM_JS_REMOVEALLCONFIRM','All logs are removed absolutely. Are you really OK?');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 05:37:51
-define('_AM_FMT_CONFIGSNOTWRITABLE','Turn the configs directory writable: %s');
-
 define('_MD_A_MYMENU_MYTPLSADMIN','');
 define('_MD_A_MYMENU_MYBLOCKSADMIN','Permisos');
 define('_MD_A_MYMENU_MYPREFERENCES','Preferencias');
@@ -30,6 +17,12 @@ define( "_AM_TH_BADIPS" , 'IPs malos<br /><br /><span style="font-weight:normal;
 
 define( "_AM_TH_GROUP1IPS" , 'IPs permitidos para Grupo=1<br /><br /><span style="font-weight:normal;">Escriba cada IP en una línea.<br />192.168. significa 192.168.*<br />Todo en blanco significa que todos los IPs son permitidos.</span>' ) ;
 
+define( "_AM_LABEL_COMPACTLOG" , "Compact log" ) ;
+define( "_AM_BUTTON_COMPACTLOG" , "Compact it!" ) ;
+define( "_AM_JS_COMPACTLOGCONFIRM" , "Duplicated (IP,Type) records will be removed" ) ;
+define( "_AM_LABEL_REMOVEALL" , "Remove all records" ) ;
+define( "_AM_BUTTON_REMOVEALL" , "Remove all!" ) ;
+define( "_AM_JS_REMOVEALLCONFIRM" , "All logs are removed absolutely. Are you really OK?" ) ;
 define( "_AM_LABEL_REMOVE" , "Eliminar los registros marcados:" ) ;
 define( "_AM_BUTTON_REMOVE" , "¡Eliminado!" ) ;
 define( "_AM_JS_REMOVECONFIRM" , "¿Está seguro de eliminación?" ) ;
@@ -37,6 +30,7 @@ define( "_AM_MSG_IPFILESUPDATED" , "Los archivos de IPs fueron actualizados" ) ;
 define( "_AM_MSG_BADIPSCANTOPEN" , "El archivo para IPs malos no puede ser abierto" ) ;
 define( "_AM_MSG_GROUP1IPSCANTOPEN" , "El archivo para permitir Grupo=1 no puede ser abierto" ) ;
 define( "_AM_MSG_REMOVED" , "Registros eliminados" ) ;
+define( "_AM_FMT_CONFIGSNOTWRITABLE" , "Turn the configs directory writable: %s" ) ;
 
 
 // prefix_manager.php
