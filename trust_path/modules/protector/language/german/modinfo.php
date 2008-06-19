@@ -102,5 +102,7 @@ define($constpref.'_SPAMURI4U','anti-SPAM: Anzahl URLs für normale Users');
 define($constpref.'_SPAMURI4UDSC','Wenn diese Anzahl von URLs in Beiträgen von Usern (nicht Admins) gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
 define($constpref.'_SPAMURI4G','anti-SPAM: Anzahl URLs für Gäste');
 define($constpref.'_SPAMURI4GDSC','Wenn diese Anzahl von URLs in Beiträgen von Gästen gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
+
 }
+
 ?>

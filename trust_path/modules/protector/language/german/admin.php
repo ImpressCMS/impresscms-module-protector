@@ -53,4 +53,7 @@ define("_AM_ADV_MAINUNPATCHED","Xoops Protector kann ihre Seite unter bestimmten
 define("_AM_ADV_SUBTITLECHECK","Überprüfen, ob Protector funktioniert");
 define("_AM_ADV_CHECKCONTAMI","Verseuchung");
 define("_AM_ADV_CHECKISOCOM","Isolierte Kommentare");
+
+
+
 ?>
