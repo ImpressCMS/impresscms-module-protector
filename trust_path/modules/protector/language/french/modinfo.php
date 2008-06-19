@@ -15,8 +15,8 @@ define($constpref."_DESC","Ce module prot&egrave;ge votre site xoops d'attaques 
 
 // Menu
 define($constpref."_ADMININDEX","Centre de protection");
-define($constpref."_ADVISORY","Conseils de sécurité");
-define($constpref."_PREFIXMANAGER","Gestionnaire de préfixe");
+define($constpref."_ADVISORY","Conseils de sÃ©curitÃ©");
+define($constpref."_PREFIXMANAGER","Gestionnaire de prÃ©fixe");
 define($constpref."_ADMENU_MYBLOCKSADMIN","Permissions") ;
 
 // Configs
@@ -55,7 +55,7 @@ define($constpref."_UNION_ACTIONDSC","Anti SQL Injection:<br />S&eacute;lectionn
 define($constpref."_ID_INTVAL","Transformation forc&eacute;e en nombre entier (intval) de variables comme ID");
 define($constpref."_ID_INTVALDSC","Tous les appels '*id' seront trait&eacute;s comme un nombre entier. Cette option vous prot&egrave;gera contre certaines attaques XSS et injections SQL.<br />(Conseil : activer cette option, cependant celle-ci peut perturber le fonctionnement de certains modules.)");
 define($constpref."_FILE_DOTDOT","Protection contre la travers&eacute;e de r&eacute;pertoires");
-define($constpref."_FILE_DOTDOTDSC","Elimination de « .. » pour toutes les demandes qui ressemblent &agrave; une tentative d'acc&egrave;s par travers&eacute;e de r&eacute;pertoires");
+define($constpref."_FILE_DOTDOTDSC","Elimination de Â« .. Â» pour toutes les demandes qui ressemblent &agrave; une tentative d'acc&egrave;s par travers&eacute;e de r&eacute;pertoires");
 
 define($constpref."_BF_COUNT","Anti Brute Force");
 define($constpref."_BF_COUNTDSC","D&eacute;finit le nombre de tentatives de connexion autoris&eacute;es pour un invit&eacute; dans un intervale de 10 minutes. Si quelqu'un &eacute;choue dans sa tentative au del&agrave; de ce nombre, son adresse IP sera bannie.");
