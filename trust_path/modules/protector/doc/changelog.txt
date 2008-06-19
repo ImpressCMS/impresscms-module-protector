@@ -8,7 +8,7 @@
   (*) english (default base)
   (+) arabic
   (+) french
-  (+) german (ok) finished translation. (Credits - René Sato)
+  (+) german (ok) finished translation. (Credits - RenÃ© Sato)
   (=) ja_utf8 (ok) (GiJoe)
   (=) japanese (ok) (GiJoe)
   (+) persian
