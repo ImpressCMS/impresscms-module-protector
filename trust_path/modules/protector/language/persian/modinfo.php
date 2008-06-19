@@ -5,16 +5,6 @@ $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:33
-define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
-define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
-define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-03-29 03:36:15
-define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions');
-
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
@@ -27,6 +17,7 @@ define($constpref."_DESC","اين ماژول سايت زوپس شما را در 
 define($constpref."_ADMININDEX","مرکز حفاظت");
 define($constpref."_ADVISORY","مشاوره ی امنیتی");
 define($constpref."_PREFIXMANAGER","مدیریت پیشوند نام جدول های پایگاه داده ها");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions') ;
 
 // Configs
 define($constpref.'_GLOBAL_DISBL','غیر فعال کردن موقت حفاظت');
@@ -37,6 +28,8 @@ define($constpref.'_RELIABLE_IPSDSC','IP های که به آن ها اطمینا
 
 define($constpref.'_LOG_LEVEL','درجه ثبت کردن وقایع');
 define($constpref.'_LOG_LEVELDSC','');
+
+define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
 
 define($constpref.'_LOGLEVEL0','none');
 define($constpref.'_LOGLEVEL15','Quiet');
@@ -88,11 +81,13 @@ define($constpref.'_OPT_NONE','هیچکدام( فقط گزارش)');
 define($constpref.'_OPT_SAN','پاک سازی داده ها از کد های خطرناک ');
 define($constpref.'_OPT_EXIT','صفحه ی سفید');
 define($constpref.'_OPT_BIP','بستن IP');
+define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
 
 define($constpref.'_DOSOPT_NONE','هیچکدام( فقط گزارش)');
 define($constpref.'_DOSOPT_SLEEP','Sleep');
 define($constpref.'_DOSOPT_EXIT','صفحه ی سفید');
 define($constpref.'_DOSOPT_BIP','بستن IP');
+define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
 define($constpref.'_DOSOPT_HTA','دفع کردن به وسیله .htaccess(آزمایشی)');
 
 define($constpref.'_BIP_EXCEPT','گروه های که هیچ وقت جز IP بد ثبت نمیشوند');
@@ -107,6 +102,7 @@ define($constpref.'_SPAMURI4U','anti-SPAM: تعداد لینک ها برای ک�
 define($constpref.'_SPAMURI4UDSC','اگر به تعداد عدد مشخص شده در کادر مقابل لینک در پست کاربر پیدا شد با پست او به عنوان هرز نامه برخورد گردد. با انتخاب صفر این گزینه را غیر فعال کنید.');
 define($constpref.'_SPAMURI4G','anti-SPAM: تعدا لینک ها برای گروه ها');
 define($constpref.'_SPAMURI4GDSC','اگر به تعداد عدد مشخص شده در کادر مقابل لینک در پست گروه ها پیدا شد با پست او به عنوان هرز نامه برخورد گردد. با انتخاب صفر این گزینه را غیر فعال کنید.');
+
 
 }
 

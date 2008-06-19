@@ -1,19 +1,6 @@
 <?php
 
 // mymenu
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-10-18 05:36:24
-define('_AM_LABEL_COMPACTLOG','Compact log');
-define('_AM_BUTTON_COMPACTLOG','Compact it!');
-define('_AM_JS_COMPACTLOGCONFIRM','Duplicated (IP,Type) records will be removed');
-define('_AM_LABEL_REMOVEALL','Remove all records');
-define('_AM_BUTTON_REMOVEALL','Remove all!');
-define('_AM_JS_REMOVEALLCONFIRM','All logs are removed absolutely. Are you really OK?');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 05:37:51
-define('_AM_FMT_CONFIGSNOTWRITABLE','Turn the configs directory writable: %s');
-
 define('_MD_A_MYMENU_MYTPLSADMIN','');
 define('_MD_A_MYMENU_MYBLOCKSADMIN','دسترسی ها');
 define('_MD_A_MYMENU_MYPREFERENCES','ویژگی ها');
@@ -30,6 +17,12 @@ define( "_AM_TH_BADIPS" , 'IP های بد<br /><br /><span style="font-weight:no
 
 define( "_AM_TH_GROUP1IPS" , 'IP های مجاز برای کاربران گروه 1 <br /><br /><span style="font-weight:normal;">اگر این کادر را پر کنید فقط  IP های برای گروه 1 ( وب مستر ها) مورد تایید خواهد بود که در این کادر وارد شده باشد وب مستر ها با IP های دیگر قادر به انجام هیچ کاری نخواهند بود<br />192.168. means 192.168.*<br />صفحه ی خالی یعنی اینکه تمام IP ها اجازه ی کار دارند</span>' ) ;
 
+define( "_AM_LABEL_COMPACTLOG" , "Compact log" ) ;
+define( "_AM_BUTTON_COMPACTLOG" , "Compact it!" ) ;
+define( "_AM_JS_COMPACTLOGCONFIRM" , "Duplicated (IP,Type) records will be removed" ) ;
+define( "_AM_LABEL_REMOVEALL" , "Remove all records" ) ;
+define( "_AM_BUTTON_REMOVEALL" , "Remove all!" ) ;
+define( "_AM_JS_REMOVEALLCONFIRM" , "All logs are removed absolutely. Are you really OK?" ) ;
 define( "_AM_LABEL_REMOVE" , "حذف کردن گزارش های چک شده:" ) ;
 define( "_AM_BUTTON_REMOVE" , "حذف کن!" ) ;
 define( "_AM_JS_REMOVECONFIRM" , "آیا حذف شود؟" ) ;
@@ -37,6 +30,7 @@ define( "_AM_MSG_IPFILESUPDATED" , "Files for IPs have been updated" ) ;
 define( "_AM_MSG_BADIPSCANTOPEN" , "این فایل متعلق به یک ip بد است و قابل بازکردن نمیباشد" ) ;
 define( "_AM_MSG_GROUP1IPSCANTOPEN" , "The file for allowing group=1 cannot be opened" ) ;
 define( "_AM_MSG_REMOVED" , "گزارش های ثبت شده حذف شد" ) ;
+define( "_AM_FMT_CONFIGSNOTWRITABLE" , "Turn the configs directory writable: %s" ) ;
 
 
 // prefix_manager.php
