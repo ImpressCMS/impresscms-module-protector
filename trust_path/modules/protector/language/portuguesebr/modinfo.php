@@ -5,16 +5,6 @@ $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:32
-define($constpref.'_BANIP_TIME0','IP Banido será suspenso pelo tempo (segundos)');
-define($constpref.'_OPT_BIPTIME0','Banir o IP (moratória)');
-define($constpref.'_DOSOPT_BIPTIME0','Banir o IP (moratória)');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-03-29 03:36:14
-define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissões');
-
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
@@ -23,19 +13,23 @@ define($constpref."_NAME","Protector");
 // A brief description of this module
 define($constpref."_DESC","Módulo para proteção do XOOPS contra ataques mal-intencionados, em especial: ataques DoS, SQL Injection e contaminações por variável.");
 
-
 // Menu
 define($constpref."_ADMININDEX","Central de proteção");
 define($constpref."_ADVISORY","Guia de segurança");
 define($constpref."_PREFIXMANAGER","Gerenciador de PREFIXO");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissões');
 
 // Configs
 define($constpref.'_GLOBAL_DISBL',"Interrupção temporária de funcionamento");
 define($constpref.'_GLOBAL_DISBLDSC',"Suspende temporariamente o funcionamento de todas as proteções.<br />Após resolver os problemas, não se esqueça de desativá-la.");
+
 define($constpref.'_RELIABLE_IPS',"IPs confiáveis");
 define($constpref.'_RELIABLE_IPSDSC',"Indique os endereços IP que não passarão por examinação para ataques DoS, separados por |. ^ para o inválido, e  $ para o final do string.");
+
 define($constpref.'_LOG_LEVEL',"Nível de gravação de log");
 define($constpref.'_LOG_LEVELDSC',"");
+
+define($constpref.'_BANIP_TIME0','IP Banido será suspenso pelo tempo (segundos)');
 
 define($constpref.'_LOGLEVEL0',"Não gerar log");
 define($constpref.'_LOGLEVEL15',"Gerar log apenas de elementos de alto risco");
@@ -87,18 +81,19 @@ define($constpref.'_OPT_NONE',"Nenhuma (apenas gerar log)");
 define($constpref.'_OPT_SAN',"Sanitização");
 define($constpref.'_OPT_EXIT',"Encerramento forçado de sessão");
 define($constpref.'_OPT_BIP',"Banimento por IP");
+define($constpref.'_OPT_BIPTIME0','Banir o IP (moratória)');
 
 define($constpref.'_DOSOPT_NONE',"Nenhuma (apenas gerar log)");
 define($constpref.'_DOSOPT_SLEEP',"Dormir");
 define($constpref.'_DOSOPT_EXIT',"Sair");
 define($constpref.'_DOSOPT_BIP',"Adicionar à lista de IPs banidos");
 define($constpref.'_DOSOPT_HTA',"Registrar DENY através de .htaccess (experimental)");
+define($constpref.'_DOSOPT_BIPTIME0','Banir o IP (moratória)');
 
 define($constpref.'_BIP_EXCEPT',"Grupos livres de banimento por IP");
 define($constpref.'_BIP_EXCEPTDSC',"Mesmo quando a condição for satisfeita, os usuários dos grupos indicados nesta opção nãp serão adicionados à lista de IPs banidos. Entretanto, se estes usuários não fizerem login, o efeito desta opção será anulado. TENHA CUIDADO!<br />(Recomendado: \"Administradores\")");
 
 define($constpref.'_DISABLES',"Desativar opções inseguras");
-
 
 define($constpref.'_BIGUMBRELLA','ativar anti-XSS (BigUmbrella)');
 define($constpref.'_BIGUMBRELLADSC','Isto protege seu site contra ataques por vulnerabilidades via XSS. Mas não é 100% garantido');
@@ -107,5 +102,7 @@ define($constpref.'_SPAMURI4U','anti-SPAM: URLs para usuários normais');
 define($constpref.'_SPAMURI4UDSC','Se este número de URLs são encontrados em dados de MENSAGENS provenientes de utilizadores não admin, a mensagem será considerada como spam. 0 (zero) significa desativar esse recurso.');
 define($constpref.'_SPAMURI4G','anti-SPAM: URLs para visitantes');
 define($constpref.'_SPAMURI4GDSC','Se este número de URLs for encontrado em MENSAGENS de hóspedes (visitantes), a mensagem será considerada como spam. 0 (zero) significa desativar esse recurso.');
+
 }
+
 ?>
