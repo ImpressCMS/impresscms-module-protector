@@ -2,14 +2,14 @@
 
 class protector_postcommon_post_htmlpurify4guest extends ProtectorFilterAbstract {
 
-	if(!is_file(XOOPS_ROOT_PATH.'/libraries/htmlpurifier/HTMLPurifier.standalone.php'))
+	if(!isset($purifier))
 	{
-		var $purifier ;
+		var $purifier;
 	}
 
 	function execute()
 	{
-		global $xoopsUser ;
+		global $xoopsUser;
 
 		// HTMLPurifier runs with PHP5 only
 		if( substr( PHP_VERSION , 0 , 1 ) == '4' ) {
