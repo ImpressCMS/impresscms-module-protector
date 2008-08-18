@@ -260,7 +260,7 @@ foreach( $prefixes as $prefix ) {
 
 echo "
 </table>
-<p>".sprintf(_AM_TXT_HOWTOCHANGEDB,XOOPS_ROOT_PATH,XOOPS_DB_PREFIX)."</p>
+<p>".sprintf(_AM_TXT_HOWTOCHANGEDB,XOOPS_TRUST_PATH,XOOPS_DB_PREFIX)."</p>
 
 " ;
 
