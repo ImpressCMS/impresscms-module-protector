@@ -14,8 +14,12 @@
 Add
 ===
 
-Updated
-=======
+Updated/Changed
+===============
+
++[file] /branches/3.20/trust_path/modules/protector/README
+	+- Returning guidelines for those who are installing and using versions of Protector impressCMS.
+
 
 Fixed
 =====

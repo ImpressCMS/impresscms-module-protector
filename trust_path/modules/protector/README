@@ -80,6 +80,14 @@ Refer this.
     }
 [/code]
 
+= How to install it into ImpressCMS 1.1 =
+
+Almost the same as installing into XOOPS 2.0.x.
+There is no need to patch mainfile.php or create a Trust Path with ImpressCMS 1.1 or later.
+
+After you have uploaded all the files to the server in the correct location,
+you need to copy the contents of the 'ImpressCMS_Extras' folder to the root of your ImpressCMS installation.
+Once completed, you may install Protector from the modules admin as normal.
 
 = UPGRADE from Protector 2.x =
 
@@ -129,6 +137,10 @@ I thank Madfish for this excellent work!
 -- arabic (onasre)
 - fixed language files
 -- de_utf8
+
+3.17 beta ImpressCMS 1.1 changes
+- modified postcommon_post.htmlpurify4guest.php, added condition to check if ImpressCMS htmlpurifier is loaded.
+  If ImpressCMS htmlpurifier library is present then protector will use ImpressCMS library and config settings. (Vaughan)
 
 3.17 beta (2008/04/24)
 - modified URLs with the same hostname as XOOPS_URL are not counted as URI SPAM
