@@ -1,6 +1,19 @@
 <?php
 
 // mymenu
+
+
+// Appended by Xoops Language Checker -GIJOE- in 2007-10-18 05:36:25
+define('_AM_LABEL_COMPACTLOG','ÍÐÝ ÝÞØ ÇáÓÌá ÇáãÊßÑÑ ááÇíÈí æÇáäæÚ');
+define('_AM_BUTTON_COMPACTLOG','ÍÐÝ ÇáãÊßÑÑ');
+define('_AM_JS_COMPACTLOGCONFIRM','ÍÐÝ ÇáÓÌáÇÊ ÇáÊí ÊÍÊæí ÊßÑÇÑ ÈäÝÓ ÇáÇíÈí');
+define('_AM_LABEL_REMOVEALL','ÍÐÝ ßá ÇáÓÌáÇÊ');
+define('_AM_BUTTON_REMOVEALL','ÍÐÝ Çáßá¿');
+define('_AM_JS_REMOVEALLCONFIRM','ÓíÊã ÍÐÝ ßá ÇáÓÌáÇÊ¿ ');
+
+// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 05:37:51
+define('_AM_FMT_CONFIGSNOTWRITABLE','ÇÚØ ãáÝ ÇáßæäÝÌ ÇáÊÕÑíÍ 777: %s');
+
 define('_MD_A_MYMENU_MYTPLSADMIN','');
 define('_MD_A_MYMENU_MYBLOCKSADMIN','ÇáÊÕÇÑíÍ');
 define('_MD_A_MYMENU_MYPREFERENCES','ÇáÊÕÇÑíÍ');
@@ -24,13 +37,6 @@ define( "_AM_MSG_IPFILESUPDATED" , "Êã ÊÍÏíË ÈíäÇÊÇ ÇáÇíÈíåÇÊ" ) ;
 define( "_AM_MSG_BADIPSCANTOPEN" , "áÇíãßä ÝÊÍ ãáÝ ÇáÇíÈíåÇÊ ÇáÓíÆÉ" ) ;
 define( "_AM_MSG_GROUP1IPSCANTOPEN" , "ãáÝ ÇáãÌãæÚÉ=1 áÇíãßä ÝÊÍÉ" ) ;
 define( "_AM_MSG_REMOVED" , "Êã ÍÐÝ ÇáÓÌá" ) ;
-define( "_AM_BUTTON_REMOVE" , "Remove!" ) ;
-define( "_AM_JS_REMOVECONFIRM" , "Remove OK?" ) ;
-define( "_AM_MSG_IPFILESUPDATED" , "Files for IPs have been updated" ) ;
-define( "_AM_MSG_BADIPSCANTOPEN" , "The file for badip cannot be opened" ) ;
-define( "_AM_MSG_GROUP1IPSCANTOPEN" , "The file for allowing group=1 cannot be opened" ) ;
-define( "_AM_MSG_REMOVED" , "Records are removed" ) ;
-define( "_AM_FMT_CONFIGSNOTWRITABLE" , "Turn the configs directory writable: %s" ) ;
 
 
 // prefix_manager.php
