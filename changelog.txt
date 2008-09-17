@@ -10,6 +10,8 @@
 ======
 
 - Generate document of all the changes between version 3.17 and 3.20 for analysis.
+- It is necessary to complete analysis of core dev team on these amendments. !!!
+- To be Continue....
 
 Add
 ===
@@ -20,7 +22,30 @@ Updated/Changed
 +[file] /branches/3.20/trust_path/modules/protector/README
 	+- Returning guidelines for those who are installing and using versions of Protector impressCMS.
 
+	+[file] /branches/3.20/trust_path/modules/protector/admin/prefix_manager.php
+    +- Changed space..
 
++[file] /branches/3.20/trust_path/modules/protector/class/gtickets.php	
+    [CAUTION]
+	[old]
+		line 189 -	                       set_error_handler( 'GTicket_ErrorHandler4FindOutput' ) ;
+	[/old]
+	[new]
+		line 189 - 	                       set_error_handler( array( &$this , 'errorHandler4FindOutput' ) ) ;
+	[/new]
+	[CAUTION]
+	[old]
+		line 278,279                      // end of class
+		                                  }
+										  function GTicket_ErrorHandler4FindOutput($errNo, $errStr, $errFile, $errLine)
+	[/old]									  
+	[new]
+		line 278,279                      function errorHandler4FindOutput($errNo, $errStr, $errFile, $errLine)
+	[/new
+	[ADD] or [CHANGED] [new] line 287,288  // end of class
+                                           }
+    [/ADD]										   
+	
 Fixed
 =====
 
