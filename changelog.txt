@@ -4,5 +4,24 @@
 
 + Adaptation to work with ImpressCMS
 + Created branches with base version 3.17 in folder 3.20
++ Sent latest version 3.20 compared to run automatically.
+
++ Task
+======
+
+- Generate document of all the changes between version 3.17 and 3.20 for analysis.
+
+Add
+===
+
+Updated
+=======
+
+Fixed
+=====
+
+New
+===
+
 
 
