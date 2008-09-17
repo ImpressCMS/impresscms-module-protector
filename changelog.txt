@@ -1,5 +1,8 @@
 ##:#############################################################################################
-##:## Protecto 3.17
+##:## Protector 3.17 -> 3.20
 ##:#############################################################################################
 
-- Adaptation to work with ImpressCMS
++ Adaptation to work with ImpressCMS
++ Created branches with base version 3.17 in folder 3.20
+
+
