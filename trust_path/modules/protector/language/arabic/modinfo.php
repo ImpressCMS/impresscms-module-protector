@@ -5,16 +5,6 @@ $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:33
-define($constpref.'_BANIP_TIME0','ãÏÉ  ÇáãäÚ  ááãØÑæÏíä .. ÈÇáËæÇäí');
-define($constpref.'_OPT_BIPTIME0','æŞİ  äÔÇØ ÇáÚÖæ ãÄŞÊÇ');
-define($constpref.'_DOSOPT_BIPTIME0','æŞİ  äÔÇØ ÇáÚÖæ ãÄŞÊÇ');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-04-08 04:24:49
-define($constpref.'_ADMENU_MYBLOCKSADMIN','ÇáÊÕÇÑíÍ');
-
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
@@ -27,6 +17,7 @@ define($constpref."_DESC","åĞÇ ÇáÈÑäÇãÌ íæİÑ áß ÍãÇíÉ ÖÏ ÚãáíÇÊ ÇáÇÎÊÑÇŞ ÇáãÎÊáİ
 define($constpref."_ADMININDEX","ÇáÑÆíÓíÉ");
 define($constpref."_ADVISORY","ÊİÍÕ ÇáÍãÇíÉ");
 define($constpref."_PREFIXMANAGER","ÇÏÇÑÉ  ŞÇÚÏÉ ÇáÈíÇäÇÊ");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','ÇáÊÕÇÑíÍ');
 
 // Configs
 define($constpref.'_GLOBAL_DISBL','ãÚØá ãÄŞÊÇ');
@@ -37,6 +28,8 @@ define($constpref.'_RELIABLE_IPSDSC','ÖÚ Èíä ßá ÇíÈ æÇÎÑ ÚáÇãÉ | æÚáÇãÉ ^ İí ÈÏÇ
 
 define($constpref.'_LOG_LEVEL','ãÓÊæì ÇáÓÌá');
 define($constpref.'_LOG_LEVELDSC','');
+
+define($constpref.'_BANIP_TIME0','ãÏÉ  ÇáãäÚ  ááãØÑæÏíä .. ÈÇáËæÇäí');
 
 define($constpref.'_LOGLEVEL0','áÇíæÌÏ');
 define($constpref.'_LOGLEVEL15','ÈÓíØ');
@@ -88,11 +81,13 @@ define($constpref.'_OPT_NONE','áÇÔíÁ');
 define($constpref.'_OPT_SAN','ÊÚŞíã ÇáÇãÑ');
 define($constpref.'_OPT_EXIT','ÕİÍÉ İÇÑÛÉ ÈíÖÇÁ');
 define($constpref.'_OPT_BIP','ØÑÏ ÇáÇíÈí');
+define($constpref.'_OPT_BIPTIME0','æŞİ  äÔÇØ ÇáÚÖæ ãÄŞÊÇ');
 
 define($constpref.'_DOSOPT_NONE','áÇÔíÁ');
 define($constpref.'_DOSOPT_SLEEP','ÚÏ ã ÇÓÊÌÇÈÉ');
 define($constpref.'_DOSOPT_EXIT','ÕİÍÉ İÇÑÛÉ ÈíÖÇÁ');
 define($constpref.'_DOSOPT_BIP','ØÑÏ ÇáÇíÈí');
+define($constpref.'_DOSOPT_BIPTIME0','æŞİ  äÔÇØ ÇáÚÖæ ãÄŞÊÇ');
 define($constpref.'_DOSOPT_HTA','ØÑÏ ÈæÇÓØÉ ãáİ.htaccess(áÇÕÍÇÈ ÇáÎÈÑÉ)');
 
 define($constpref.'_BIP_EXCEPT','ÇáãÌãæÚÉ ÇáÊí áä íÊã ØÑÏåÇ ÇÈÏÇ');

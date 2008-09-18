@@ -1,19 +1,6 @@
 <?php
 
 // mymenu
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-10-18 05:36:25
-define('_AM_LABEL_COMPACTLOG','ֽ׀Ý ÝÞ״ ַב׃ּב ַבדÊßׁׁ בבַםָם זַבהזÚ');
-define('_AM_BUTTON_COMPACTLOG','ֽ׀Ý ַבדÊßׁׁ');
-define('_AM_JS_COMPACTLOGCONFIRM','ֽ׀Ý ַב׃ּבַÊ ַבÊם ÊֽÊזם Êßַׁׁ ָהÝ׃ ַבַםָם');
-define('_AM_LABEL_REMOVEALL','ֽ׀Ý ßב ַב׃ּבַÊ');
-define('_AM_BUTTON_REMOVEALL','ֽ׀Ý ַבßב¿');
-define('_AM_JS_REMOVEALLCONFIRM','׃םÊד ֽ׀Ý ßב ַב׃ּבַÊ¿ ');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 05:37:51
-define('_AM_FMT_CONFIGSNOTWRITABLE','ַÚ״ דבÝ ַבßזהÝּ ַבÊױׁםֽ 777: %s');
-
 define('_MD_A_MYMENU_MYTPLSADMIN','');
 define('_MD_A_MYMENU_MYBLOCKSADMIN','ַבÊױַׁםֽ');
 define('_MD_A_MYMENU_MYPREFERENCES','ַבÊױַׁםֽ');
@@ -30,6 +17,12 @@ define( "_AM_TH_BADIPS" , 'ַׁÞַד ַבַםָם ַב׃םֶֹ<br /><br /><span style="font-weig
 
 define( "_AM_TH_GROUP1IPS" , 'ַםָם ַבדֽדזÚַÊ ַבדױֽׁ בוַ  ׁÞד ַבדּדזÚֹ דֻבַ=1<br /><br /><span style="font-weight:normal;">Þד ָßÊַָֹ ßב ַםָם ָ׃״ׁ<br />192.168. means 192.168.*<br />ַÊׁßו ÝַׁÛַ ַה ׁÛָÊ  ַָב׃דַֽ בבßב ַָבֿ־זב בבדזÞÚ</span>' ) ;
 
+define('_AM_LABEL_COMPACTLOG','ֽ׀Ý ÝÞ״ ַב׃ּב ַבדÊßׁׁ בבַםָם זַבהזÚ');
+define('_AM_BUTTON_COMPACTLOG','ֽ׀Ý ַבדÊßׁׁ');
+define('_AM_JS_COMPACTLOGCONFIRM','ֽ׀Ý ַב׃ּבַÊ ַבÊם ÊֽÊזם Êßַׁׁ ָהÝ׃ ַבַםָם');
+define('_AM_LABEL_REMOVEALL','ֽ׀Ý ßב ַב׃ּבַÊ');
+define('_AM_BUTTON_REMOVEALL','ֽ׀Ý ַבßב¿');
+define('_AM_JS_REMOVEALLCONFIRM','׃םÊד ֽ׀Ý ßב ַב׃ּבַÊ¿ ');
 define( "_AM_LABEL_REMOVE" , "ֽ׀Ý ַב׃ּבַÊ ַבד־Êַֹׁ" ) ;
 define( "_AM_BUTTON_REMOVE" , "ֽ׀Ý" ) ;
 define( "_AM_JS_REMOVECONFIRM" , "וב ÊׁÛָ ַָבֽ׀Ý" ) ;
@@ -37,6 +30,7 @@ define( "_AM_MSG_IPFILESUPDATED" , "Êד Êֽֿםֻ ָםהַÊַ ַבַםָםוַÊ" ) ;
 define( "_AM_MSG_BADIPSCANTOPEN" , "בַםדßה ÝÊֽ דבÝ ַבַםָםוַÊ ַב׃םֶֹ" ) ;
 define( "_AM_MSG_GROUP1IPSCANTOPEN" , "דבÝ ַבדּדזÚֹ=1 בַםדßה ÝÊֹֽ" ) ;
 define( "_AM_MSG_REMOVED" , "Êד ֽ׀Ý ַב׃ּב" ) ;
+define('_AM_FMT_CONFIGSNOTWRITABLE','ַÚ״ דבÝ ַבßזהÝּ ַבÊױׁםֽ 777: %s');
 
 
 // prefix_manager.php
@@ -59,7 +53,5 @@ define("_AM_ADV_MAINUNPATCHED","םָּ ÊÚֿםב דבÝ mainfile.php ßדַ Êד Êזײםֹֽ Ýם דבÝ 
 define("_AM_ADV_SUBTITLECHECK","ÊÝֽױ ַ׀ ßַה ַבָׁהַדּ םÚדב");
 define("_AM_ADV_CHECKCONTAMI","Êבזֻ ");
 define("_AM_ADV_CHECKISOCOM","ÊÚבםÞַÊ דÊÝׁÞֹ");
-
-
 
 ?>
