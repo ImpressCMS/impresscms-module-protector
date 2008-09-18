@@ -1,15 +1,6 @@
 <?php
 
 // mymenu
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-10-18 05:36:25
-define('_AM_LABEL_COMPACTLOG','Compact log');
-define('_AM_BUTTON_COMPACTLOG','Compact it!');
-define('_AM_JS_COMPACTLOGCONFIRM','Duplicated (IP,Type) records will be removed');
-define('_AM_LABEL_REMOVEALL','Remove all records');
-define('_AM_BUTTON_REMOVEALL','Remove all!');
-define('_AM_JS_REMOVEALLCONFIRM','All logs are removed absolutely. Are you really OK?');
-
 define('_MD_A_MYMENU_MYTPLSADMIN','');
 define('_MD_A_MYMENU_MYBLOCKSADMIN','Permissions');
 define('_MD_A_MYMENU_MYPREFERENCES','Preferences');
@@ -26,6 +17,12 @@ define( "_AM_TH_BADIPS" , 'IPs bannies<br /><br /><span style="font-weight:norma
 
 define( "_AM_TH_GROUP1IPS" , 'IPs autoris&eacute;es pour le groupe administrateurs<br /><br /><span style="font-weight:normal;">Ecrivez chaque ip sur une ligne.<br />192.168. signifie 192.168.*<br />Ne rien mettre signifie que toutes les IPs sont autoris&eacute;es</span>' ) ;
 
+define( "_AM_LABEL_COMPACTLOG" , "Compact log" ) ;
+define( "_AM_BUTTON_COMPACTLOG" , "Compact it!" ) ;
+define( "_AM_JS_COMPACTLOGCONFIRM" , "Duplicated (IP,Type) records will be removed" ) ;
+define( "_AM_LABEL_REMOVEALL" , "Remove all records" ) ;
+define( "_AM_BUTTON_REMOVEALL" , "Remove all!" ) ;
+define( "_AM_JS_REMOVEALLCONFIRM" , "All logs are removed absolutely. Are you really OK?" ) ;
 define( "_AM_LABEL_REMOVE" , "Supprimer les enregistrements coch&eacute;s :" ) ;
 define( "_AM_BUTTON_REMOVE" , "Supprimer!" ) ;
 define( "_AM_JS_REMOVECONFIRM" , "Confirmation de la suppression ?" ) ;

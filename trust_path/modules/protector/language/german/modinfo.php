@@ -1,19 +1,9 @@
-<?php
+Ôªø<?php
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) ) $mydirname = 'protector' ;
 $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
-
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:33
-define($constpref.'_BANIP_TIME0','Banned IP suspension time (sec)');
-define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
-define($constpref.'_DOSOPT_BIPTIME0','Ban the IP (moratorium)');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-03-29 03:36:15
-define($constpref.'_ADMENU_MYBLOCKSADMIN','Permissions');
 
 define( $constpref.'_LOADED' , 1 ) ;
 
@@ -21,78 +11,83 @@ define( $constpref.'_LOADED' , 1 ) ;
 define($constpref."_NAME","Xoops Protector");
 
 // A brief description of this module
-define($constpref."_DESC","Dieses Modul sch¸tzt vor Angriffen auf¸r Ihre Xoops-Seite (DoS , SQL Injektion und Variablen Infektionen)");
+define($constpref."_DESC","Diese Module sch√ºtzt Ihre Seite vor verschiedenen Angriffen z.B. DoS , SQL Injection , ....");
 
 // Menu
 define($constpref."_ADMININDEX","Protect Center");
 define($constpref."_ADVISORY","Sicherheitsberatung");
 define($constpref."_PREFIXMANAGER","Prefix Manager");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','Berechtigungen') ;
 
 // Configs
-define($constpref.'_GLOBAL_DISBL','Vor¸bergehend deaktiviert');
-define($constpref.'_GLOBAL_DISBLDSC','Alle Sicherheitsfunktionen sind vor¸bergehend deaktiviert!<br />Vergessen Sie nicht diese wieder einzuschalten, wenn Sie eine Stˆrung beseitigt haben!');
+define($constpref.'_GLOBAL_DISBL','Vor√ºbergehend deaktiviert');
+define($constpref.'_GLOBAL_DISBLDSC','Alle Sicherheitsfunktionen sind vor√ºbergehend deaktiviert!<br />Vergessen Sie nicht diese wieder einzuschalten, wenn Sie eine St√∂rung beseitigt haben!');
 
-define($constpref.'_RELIABLE_IPS','Reliable IPs');
-define($constpref.'_RELIABLE_IPSDSC','Sie kˆnnen IP Adressen mit einem | trennen. ^ setzt den Kopf¸rdes String, $ setzt das Ende des Strings.');
+define($constpref.'_RELIABLE_IPS','Sichere IPs');
+define($constpref.'_RELIABLE_IPSDSC','Sie k√∂nnen IP Adressen mit einem | trennen. ^ setzt den Kopf des String, $ setzt das Ende des Strings.');
 
-define($constpref.'_LOG_LEVEL','Logging Level');
-define($constpref.'_LOG_LEVELDSC','');
+define($constpref.'_LOG_LEVEL','Berichtsstufe');
+define($constpref.'_LOG_LEVELDSC','Stufe wie genau der Bericht verfasst wird');
+
+define($constpref.'_BANIP_TIME0','Blockadezeit von gesperrten IPs, zeit in Sekunden');
 
 define($constpref.'_LOGLEVEL0','nichts');
 define($constpref.'_LOGLEVEL15','still');
 define($constpref.'_LOGLEVEL63','still');
 define($constpref.'_LOGLEVEL255','voll');
 
-define($constpref.'_HIJACK_TOPBIT','Gesch¸tzte IP bits f¸r dieses Session');
-define($constpref.'_HIJACK_TOPBITDSC','Anti Session Hi-Jacking:<br />Default 32(bit). (Alle Bits sind gesch¸tzt)<br />Wenn Sie keine statische IP Adresse haben, setzen Sie den IP Bereich mit Nummer der einzelnen Bits.<br />(eg) Wenn sich Ihre IP im Bereich von 192.168.0.0 bis 192.168.0.255 befindet, setzen Sie 24(bit) hier');
-define($constpref.'_HIJACK_DENYGP','Gruppen denen das ƒndern der IP innerhalb einer Session untersagt wird.');
-define($constpref.'_HIJACK_DENYGPDSC','Anti Session Hi-Jacking:<br />W‰hlen sie Gruppen aus, denen es untersagt ist, ihre IP w‰hrend einer Session zu ‰ndern..<br />(Mindestens Administrator-Gruppe wird empfohlen.)');
-define($constpref.'_SAN_NULLBYTE','Sanitizing (S‰uberung) null-bytes');
+define($constpref.'_HIJACK_TOPBIT','Gesch√ºtzte IP bits f√ºr dieses Session');
+define($constpref.'_HIJACK_TOPBITDSC','Anti Session Hi-Jacking:<br />Default 32(bit). (Alle Bits sind gesch√ºtzt)<br />Wenn Sie keine statische IP Adresse haben, setzen Sie den IP Bereich mit Nummer der einzelnen Bits.<br />(eg) Wenn sich Ihre IP im Bereich von 192.168.0.0 bis 192.168.0.255 befindet, setzen Sie 24(bit) hier');
+define($constpref.'_HIJACK_DENYGP','Gruppen denen das √§ndern der IP innerhalb einer Session untersagt wird.');
+define($constpref.'_HIJACK_DENYGPDSC','Anti Session Hi-Jacking:<br />W√§hlen sie Gruppen aus, denen es untersagt ist, ihre IP w√§hrend einer Session zu √§ndern..<br />(Mindestens Administrator-Gruppe wird empfohlen.)');
+define($constpref.'_SAN_NULLBYTE','Sanitizing (S√§uberung) null-bytes');
 define($constpref.'_SAN_NULLBYTEDSC','Das Abschluss-Zeichen "\\0" wird oft in Attacken verwendet.<br />Dieses Null-Byte wird in ein Leerzeichen konvertiert.<br />(Einschalten wird dringendst empfohlen!)');
 define($constpref.'_DIE_NULLBYTE','Beenden, wenn Null-Bytes gefunden werden');
 define($constpref.'_DIE_NULLBYTEDSC','Das Abschluss-Zeichen "\\0" wird oft in Attacken verwendet.<br />(Dringendst empfohlen)');
-define($constpref.'_DIE_BADEXT','Beenden, wenn unzul‰ssgige Dateien hochgeladen werden');
-define($constpref.'_DIE_BADEXTDSC','Wenn jemand versucht, Dateien mit unzul‰ssigen Endungen wie .php hochzuladen, beendet diese Modul den Zugriff f¸r XOOPS.<br />Wenn Sie oft Dateien in B-Wiki oder PukiWikiMod einstellen, schalten Sie diese Option aus.');
-define($constpref.'_CONTAMI_ACTION','Maﬂnahmen, wenn eine Verunreinigung gefunden wurde:');
-define($constpref.'_CONTAMI_ACTIONDS','W‰hlen Sie eine Aktion aus, wenn jemand versucht, globale XOOPS-Variablen zu verunreinigen.<br />(Empfohlen wird "Weiﬂer Bildschirm")');
-define($constpref.'_ISOCOM_ACTION','Maﬂnahmen, wenn eine isolierte Einkommentierung gefunden wurde:');
-define($constpref.'_ISOCOM_ACTIONDSC','Anti SQL Injection:<br />W‰hlen Sie eine Massnahme aus, die ergriffen wird, wenn ein  isoliertes "/*" gefunden wird.<br />"Sanitizing (S‰uberung)" bedeutet, ein zus‰tzliches  "*/" anzuh‰ngen.<br />(Empfohlen wird "Sanitizing (S‰uberung)" )');
+define($constpref.'_DIE_BADEXT','Beenden, wenn unzul√§ssgige Dateien hochgeladen werden');
+define($constpref.'_DIE_BADEXTDSC','Wenn jemand versucht, Dateien mit unzul√§ssigen Endungen wie .php hochzuladen, beendet diese Modul den Zugriff f√ºr XOOPS.<br />Wenn Sie oft Dateien in B-Wiki oder PukiWikiMod einstellen, schalten Sie diese Option aus.');
+define($constpref.'_CONTAMI_ACTION','Ma√ünahmen, wenn eine Verunreinigung gefunden wurde:');
+define($constpref.'_CONTAMI_ACTIONDS','W√§hlen Sie eine Aktion aus, wenn jemand versucht, globale XOOPS-Variablen zu verunreinigen.<br />(Empfohlen wird "Wei√üer Bildschirm")');
+define($constpref.'_ISOCOM_ACTION','Ma√ünahmen, wenn eine isolierte Einkommentierung gefunden wurde:');
+define($constpref.'_ISOCOM_ACTIONDSC','Anti SQL Injection:<br />W√§hlen Sie eine Massnahme aus, die ergriffen wird, wenn ein  isoliertes "/*" gefunden wird.<br />"Sanitizing (S√§uberung)" bedeutet, ein zus√§tzliches  "*/" anzuh√§ngen.<br />(Empfohlen wird "Sanitizing - S√§uberung)" )');
 define($constpref.'_UNION_ACTION','Massnahme wenn ein UNION gefunden wurde.');
-define($constpref.'_UNION_ACTIONDSC','Anti SQL Injection:<br />W‰hlen sie eine Massnahme, wenn ein SQL-Befehl wie UNION gefunden wurde.<br />"Sanitizing (S‰uberung)" bedeutet die ƒnderung von "union" nach "uni-on".<br />(Empfohlen wird Sanitizing (S‰uberung))');
-define($constpref.'_ID_INTVAL','Erzwinge intval f¸r Variablen wie ID¥s');
-define($constpref.'_ID_INTVALDSC','Alle Anfragen mit Namen "*id" Werden als Integer behandelt.<br />Diese Option besch¸tzt sie vor einigen Arten der XSS-(Cross Site Scripting-) und SQL-Injection-Attacken.<br />Obwohl empfohlen wird, diese Option einzuschalten, kann es in einigen Modulen Probleme damit geben.');
+define($constpref.'_UNION_ACTIONDSC','Anti SQL Injection:<br />W√§hlen sie eine Massnahme, wenn ein SQL-Befehl wie UNION gefunden wurde.<br />"Sanitizing (S√§uberung)" bedeutet die √Ñnderung von "union" nach "uni-on".<br />(Empfohlen wird Sanitizing - S√§uberung)');
+define($constpref.'_ID_INTVAL','Erzwinge intval f√ºr Variablen wie IDs');
+define($constpref.'_ID_INTVALDSC','Alle Anfragen mit Namen "*id" Werden als Integer behandelt.<br />Diese Option besch√ºtzt sie vor einigen Arten der XSS-(Cross Site Scripting-) und SQL-Injection-Attacken.<br />Obwohl empfohlen wird, diese Option einzuschalten, kann es in einigen Modulen Probleme damit geben.');
 define($constpref.'_FILE_DOTDOT','Behebe zweifelhafte Dateiangaben');
 define($constpref.'_FILE_DOTDOTDSC','Eliminiertalle ".." aus Anfragen, die nach Dateien suchen');
 
 define($constpref.'_BF_COUNT','Anti Brute Force');
-define($constpref.'_BF_COUNTDSC','Setzt die Anzahl der Loginversuchen von G‰sten innerhalb 10 minuten. Wenn die Anzahl von Loginversuchen erreicht ist, wird die IP auf die Liste der schlechten IPs gesetzt.');
+define($constpref.'_BF_COUNTDSC','Setzt die Anzahl der Loginversuchen von G√§sten innerhalb 10 minuten. Wenn die Anzahl von Loginversuchen erreicht ist, wird die IP auf die Liste der schlechten IPs gesetzt.');
 
-define($constpref.'_DOS_SKIPMODS','Module die nicht auf DoS/Crawler gepr¸ft werden');
+define($constpref.'_DOS_SKIPMODS','Module die nicht auf DoS/Crawler gepr√ºft werden');
 define($constpref.'_DOS_SKIPMODSDSC','setzt die Verzeichnisnamen der Module, getrennt durch ein |. Diese Option ist bei Chatmodulen etc. hilfreich');
 
-define($constpref.'_DOS_EXPIRE','','Zeitlimit f¸r hohe Serverlast (Sekunden)');
-define($constpref.'_DOS_EXPIREDSC','Dieser Wert gibt das Zeitlimit f¸r rasch wiederholte Reloads der Seite (F5 Attacke) und f¸rSuchmaschinen mit hoher Last an.');
+define($constpref.'_DOS_EXPIRE','','Zeitlimit f√ºr hohe Serverlast (Sekunden)');
+define($constpref.'_DOS_EXPIREDSC','Dieser Wert gibt das Zeitlimit f√ºr rasch wiederholte Reloads der Seite (F5 Attacke) und f√ºr Suchmaschinen mit hoher Last an.');
 
-define($constpref.'_DOS_F5COUNT','Anzahl als sch‰dlich eingestufter Reloads F5');
+define($constpref.'_DOS_F5COUNT','Anzahl als sch√§dlich eingestufter Reloads F5');
 define($constpref.'_DOS_F5COUNTDSC','verhindert DoS Attacken.<br />Der Wert gibt an, wieviele Reloads (F5) als Attacke eingestuft werden.');
-define($constpref.'_DOS_F5ACTION','Maﬂnahmen gegen F5 Attacke');
+define($constpref.'_DOS_F5ACTION','Ma√ünahmen gegen F5 Attacke');
 
-define($constpref.'_DOS_CRCOUNT','Anzahl als sch‰dlich eingestufter Suchmaschinen-Abfragen');
-define($constpref.'_DOS_CRCOUNTDSC','Sch¸tzt vor Server-intensiven Abfragen durch Suchmaschinen.<br />Dieser Wert gibt an, wieviele Zugriffe als Server-intensiv eingestuft werden.');
-define($constpref.'_DOS_CRACTION','Maﬂnahmen gegen Server-intensive Suchmaschinen');
+define($constpref.'_DOS_CRCOUNT','Anzahl als sch√§dlich eingestufter Suchmaschinen-Abfragen');
+define($constpref.'_DOS_CRCOUNTDSC','Sch√ºtzt vor Server-intensiven Abfragen durch Suchmaschinen.<br />Dieser Wert gibt an, wieviele Zugriffe als Server-intensiv eingestuft werden.');
+define($constpref.'_DOS_CRACTION','Ma√ünahmen gegen Server-intensive Suchmaschinen');
 
 define($constpref.'_DOS_CRSAFE','Zugelassene User-Agents');
-define($constpref.'_DOS_CRSAFEDSC','Ein regulaeer Perl-Ausdruck f¸rUser-Agents.<br />Wenn der Ausdruck zutrifft, wird die Suchmaschine niemals als Server-intensiv eingestuft.<br />Bsp: (msnbot|Googlebot|Yahoo! Slurp)/i');
+define($constpref.'_DOS_CRSAFEDSC','Ein regulaeer Perl-Ausdruck f√ºr User-Agents.<br />Wenn der Ausdruck zutrifft, wird die Suchmaschine niemals als Server-intensiv eingestuft.<br />Bsp: (msnbot|Googlebot|Yahoo! Slurp)/i');
 
 define($constpref.'_OPT_NONE','Keine (nur logging)');
-define($constpref.'_OPT_SAN','Sanitizing (S‰uberung)');
-define($constpref.'_OPT_EXIT','Weiﬂer Bildschirm');
+define($constpref.'_OPT_SAN','Sanitizing (S√§uberung)');
+define($constpref.'_OPT_EXIT','Wei√üer Bildschirm');
 define($constpref.'_OPT_BIP','IP sperren');
+define($constpref.'_OPT_BIPTIME0','Ban the IP (moratorium)');
 
 define($constpref.'_DOSOPT_NONE','Keine (nur logging)');
-define($constpref.'_DOSOPT_SLEEP','Sleep');
-define($constpref.'_DOSOPT_EXIT','Weiﬂer Bildschirm');
+define($constpref.'_DOSOPT_SLEEP','schlafen');
+define($constpref.'_DOSOPT_EXIT','Wei√üer Bildschirm');
 define($constpref.'_DOSOPT_BIP','IP sperren');
+define($constpref.'_DOSOPT_BIPTIME0','Sperre die IP (moratorium)');
 define($constpref.'_DOSOPT_HTA','DENY by .htaccess(Experimental)');
 
 define($constpref.'_BIP_EXCEPT','Gruppen, die niemals als "schlechte IP" eingestuft werden.');
@@ -101,12 +96,12 @@ define($constpref.'_BIP_EXCEPTDSC','Ein User, der in dieser Gruppe ist, wird nie
 define($constpref.'_DISABLES','Deaktiviert die Sicherheitsfeatures von Protector in XOOPS');
 
 define($constpref.'_BIGUMBRELLA','aktiviere anti-XSS (BigUmbrella)');
-define($constpref.'_BIGUMBRELLADSC','Dies sch¸tzt vor Angriffenvia XSS vulnerabilities. Sch¸tzt nicht zu 100%');
+define($constpref.'_BIGUMBRELLADSC','Dies sch√ºtzt vor Angriffenvia XSS vulnerabilities. Sch√ºtzt nicht zu 100%');
 
-define($constpref.'_SPAMURI4U','anti-SPAM: Anzahl URLs f¸r normale Users');
-define($constpref.'_SPAMURI4UDSC','Wenn diese Anzahl von URLs in Beitr‰gen von Usern (nicht Admins) gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
-define($constpref.'_SPAMURI4G','anti-SPAM: Anzahl URLs f¸r G‰ste');
-define($constpref.'_SPAMURI4GDSC','Wenn diese Anzahl von URLs in Beitr‰gen von G‰sten gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
+define($constpref.'_SPAMURI4U','anti-SPAM: Anzahl URLs f√ºr normale Users');
+define($constpref.'_SPAMURI4UDSC','Wenn diese Anzahl von URLs in Beitr√§gen von Usern (nicht Admins) gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
+define($constpref.'_SPAMURI4G','anti-SPAM: Anzahl URLs f√ºr G√§ste');
+define($constpref.'_SPAMURI4GDSC','Wenn diese Anzahl von URLs in Beitr√§gen von G√§sten gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
 
 }
 
