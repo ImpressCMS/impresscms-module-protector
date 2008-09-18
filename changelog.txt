@@ -17,7 +17,18 @@
 - below some examples and observations. All links persentes of changes in each file.
 - All files of languages will be ignored because we will update the original in the trunk and the match remaining.
 - If possible, this team must review the core needs to be done before the official release of version impresscms 1.1rc2
-- To be Continue....
+- Language revised..
+	+ Arabic (Only compared constant and orderly)
+	+ French (Only compared constant and orderly)
+	+ german (ok)
+	+ japanese (ok)
+	+ persian (ok)
+	+ polish (ok)
+	+ portuguesebr (ok)
+	+ russian (ok)
+	+ spanish (ok)
+
+- My task finished, now is with Dev core...Giba
 
 Add
 ===
