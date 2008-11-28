@@ -17,6 +17,12 @@ define( "_AM_TH_BADIPS" , '«—ﬁ«„ «·«Ì»Ì «·”Ì∆…<br /><br /><span style="font-weig
 
 define( "_AM_TH_GROUP1IPS" , '«Ì»Ì «·„Õ„Ê⁄«  «·„’—Õ ·Â«  —ﬁ„ «·„Ã„Ê⁄… „À·«=1<br /><br /><span style="font-weight:normal;">ﬁ„ »ﬂ «»… ﬂ· «Ì»Ì »”ÿ—<br />192.168. means 192.168.*<br />« —ﬂÂ ›«—€« «‰ —€»   »«·”„«Õ ··ﬂ· »«·œŒÊ· ··„Êﬁ⁄</span>' ) ;
 
+define('_AM_LABEL_COMPACTLOG','Õ–› ›ﬁÿ «·”Ã· «·„ ﬂ—— ··«Ì»Ì Ê«·‰Ê⁄');
+define('_AM_BUTTON_COMPACTLOG','Õ–› «·„ ﬂ——');
+define('_AM_JS_COMPACTLOGCONFIRM','Õ–› «·”Ã·«  «· Ì  Õ ÊÌ  ﬂ—«— »‰›” «·«Ì»Ì');
+define('_AM_LABEL_REMOVEALL','Õ–› ﬂ· «·”Ã·« ');
+define('_AM_BUTTON_REMOVEALL','Õ–› «·ﬂ·ø');
+define('_AM_JS_REMOVEALLCONFIRM','”Ì „ Õ–› ﬂ· «·”Ã·« ø ');
 define( "_AM_LABEL_REMOVE" , "Õ–› «·”Ã·«  «·„Œ «—…" ) ;
 define( "_AM_BUTTON_REMOVE" , "Õ–›" ) ;
 define( "_AM_JS_REMOVECONFIRM" , "Â·  —€» »«·Õ–›" ) ;
@@ -24,13 +30,7 @@ define( "_AM_MSG_IPFILESUPDATED" , " „  ÕœÌÀ »Ì‰« « «·«Ì»ÌÂ« " ) ;
 define( "_AM_MSG_BADIPSCANTOPEN" , "·«Ì„ﬂ‰ › Õ „·› «·«Ì»ÌÂ«  «·”Ì∆…" ) ;
 define( "_AM_MSG_GROUP1IPSCANTOPEN" , "„·› «·„Ã„Ê⁄…=1 ·«Ì„ﬂ‰ › Õ…" ) ;
 define( "_AM_MSG_REMOVED" , " „ Õ–› «·”Ã·" ) ;
-define( "_AM_BUTTON_REMOVE" , "Remove!" ) ;
-define( "_AM_JS_REMOVECONFIRM" , "Remove OK?" ) ;
-define( "_AM_MSG_IPFILESUPDATED" , "Files for IPs have been updated" ) ;
-define( "_AM_MSG_BADIPSCANTOPEN" , "The file for badip cannot be opened" ) ;
-define( "_AM_MSG_GROUP1IPSCANTOPEN" , "The file for allowing group=1 cannot be opened" ) ;
-define( "_AM_MSG_REMOVED" , "Records are removed" ) ;
-define( "_AM_FMT_CONFIGSNOTWRITABLE" , "Turn the configs directory writable: %s" ) ;
+define('_AM_FMT_CONFIGSNOTWRITABLE','«⁄ÿ „·› «·ﬂÊ‰›Ã «· ’—ÌÕ 777: %s');
 
 
 // prefix_manager.php
@@ -53,7 +53,5 @@ define("_AM_ADV_MAINUNPATCHED","ÌÃ»  ⁄œÌ· „·› mainfile.php ﬂ„«  „  Ê÷ÌÕ… ›Ì „·› 
 define("_AM_ADV_SUBTITLECHECK"," ›Õ’ «– ﬂ«‰ «·»—‰«„Ã Ì⁄„·");
 define("_AM_ADV_CHECKCONTAMI"," ·ÊÀ ");
 define("_AM_ADV_CHECKISOCOM"," ⁄·Ìﬁ«  „ ›—ﬁ…");
-
-
 
 ?>

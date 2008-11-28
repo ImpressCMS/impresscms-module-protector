@@ -37,7 +37,7 @@ define( "_AM_FMT_CONFIGSNOTWRITABLE" , "Turn the configs directory writable: %s"
 define( "_AM_H3_PREFIXMAN" , "Prefix Manager" ) ;
 define( "_AM_MSG_DBUPDATED" , "Database Updated Successfully!" ) ;
 define( "_AM_CONFIRM_DELETE" , "All data will be dropped. OK?" ) ;
-define( "_AM_TXT_HOWTOCHANGEDB" , "If you want to change prefix,<br /> edit %s/*.php manually.<br /><br />define('SDATA_DB_PREFIX', '<b>%s</b>');" ) ;
+define( "_AM_TXT_HOWTOCHANGEDB" , "If you want to change prefix,<br /> edit %s/mainfile.php manually.<br /><br />define('XOOPS_DB_PREFIX', '<b>%s</b>');" ) ;
 
 
 // advisory.php

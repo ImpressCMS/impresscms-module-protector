@@ -1,5 +1,139 @@
 ##:#############################################################################################
-##:## Protecto 3.17
+##:## Protector 3.17 -> 3.20
+##:#############################################################################################
+##:## Started Branch in 2008/09/17
 ##:#############################################################################################
 
-- Adaptation to work with ImpressCMS
+
++ Adaptation to work with ImpressCMS
++ Created branches with base version 3.17 in folder 3.20
++ Sent latest version 3.20 compared to run automatically.
+
++ Task
+======
+
+- Generate document of all the changes between version 3.17 and 3.20 for analysis.
+- It is necessary to complete analysis of core dev team on these amendments. !!!
+- below some examples and observations. All links persentes of changes in each file.
+- All files of languages will be ignored because we will update the original in the trunk and the match remaining.
+- If possible, this team must review the core needs to be done before the official release of version impresscms 1.1rc2
+- Language revised..
+	+ Arabic (Only compared constant and orderly)
+	+ French (Only compared constant and orderly)
+	+ german (ok)
+	+ japanese (ok)
+	+ persian (ok)
+	+ polish (ok)
+	+ portuguesebr (ok)
+	+ russian (ok)
+	+ spanish (ok)
+
+- My task finished, now is with Dev core...Giba
+
+Add
+===
+
+Updated/Changed
+===============
+
++[file] /branches/3.20/trust_path/modules/protector/README
+http://impresscms.svn.sourceforge.net/viewvc/impresscms/modules/protector/branches/3.20/trust_path/modules/protector/README?r1=4938&r2=4937&pathrev=4938
+
+	+- Returning guidelines for those who are installing and using versions of Protector impressCMS.
+
+	+[file] /branches/3.20/trust_path/modules/protector/admin/prefix_manager.php
+    +- Changed space..
+
++[file] /branches/3.20/trust_path/modules/protector/class/gtickets.php	
+	http://impresscms.svn.sourceforge.net/viewvc/impresscms/modules/protector/branches/3.20/trust_path/modules/protector/class/gtickets.php?r1=4938&r2=4937&pathrev=4938
+
+    [CAUTION]
+	[old]
+		line 189 -	                       set_error_handler( 'GTicket_ErrorHandler4FindOutput' ) ;
+	[/old]
+	[new]
+		line 189 - 	                       set_error_handler( array( &$this , 'errorHandler4FindOutput' ) ) ;
+	[/new]
+	[CAUTION]
+	[old]
+		line 278,279                      // end of class
+		                                  }
+										  function GTicket_ErrorHandler4FindOutput($errNo, $errStr, $errFile, $errLine)
+	[/old]									  
+	[new]
+		line 278,279                      function errorHandler4FindOutput($errNo, $errStr, $errFile, $errLine)
+	[/new
+	[ADD] or [CHANGED] [new] line 287,288  // end of class
+                                           }
+    [/ADD]										   
+
+
++[file] /branches/3.20/trust_path/modules/protector/filters_disabled/postcommon_post_htmlpurify4guest.php
+	http://impresscms.svn.sourceforge.net/viewvc/impresscms/modules/protector/branches/3.20/trust_path/modules/protector/filters_disabled/postcommon_post_htmlpurify4guest.php?r1=4938&r2=4937&pathrev=4938
+	[CAUTION] 
+		If extended class that controls purifier run, I think the only version of impresscms, 
+		should return true and the rest of the code was abolished.
+	[/CAUTION]
+
+	[old] line 4,5,6
+		         if(!isset($purifier)) 	 
+	         { 	 
+               var $purifier;
+	         }
+	[/old]
+	
+	[new] line 4
+			 var $purifier;
+	[/new]
+
+	[old] line initial 19
+		                if(is_file(XOOPS_ROOT_PATH.'/libraries/htmlpurifier/HTMLPurifier.standalone.php')) 	 
+	                 { 	 
+	                         if(function_exists('icms_html_purifier')) 	 
+	                         { 	 
+	                                 $prot_purifier = &icms_HTMLPurifier::getPurifierInstance(); 	 
+	                                 $_POST = $prot_purifier->icms_html_purifier($_POST, 'protector'); 	 
+	                         } 	 
+	                         else 	 
+	                         { 	 
+	                                 if(!function_exists('purify')) 	 
+	                                 { 	 
+	                                         require_once XOOPS_ROOT_PATH.'/libraries/htmlpurifier/HTMLPurifier.standalone.php' 	 
+	                                         require_once XOOPS_ROOT_PATH.'/libraries/htmlpurifier/HTMLPurifier.autoload.php' 	 
+	                                 } 	 
+	                                 $config = HTMLPurifier_Config::createDefault(); 	 
+	                                 $config->set('Cache', 'SerializerPath', XOOPS_TRUST_PATH.'/modules/protector/configs'); 	 
+	                                 $config->set('Core', 'Encoding', _CHARSET); 	 
+	                                 //$config->set('HTML', 'Doctype', 'HTML 4.01 Transitional'); 	 
+	  	 
+	                                 $this->purifier = new HTMLPurifier($config); 	 
+	  	 
+	                                 $_POST = $this->purify_recursive( $_POST ) ; 	 
+	                         } 	 
+	                 } 	 
+	                 else 	 
+	                 {
+	[/old]
+
+	[new] Not exist code, all removed...
+	[/new]	
+		
+	[old] line 29
+					}
+	[/old]				
+
++[file] /branches/3.20/trust_path/modules/protector/xoops_version.php
+http://impresscms.svn.sourceforge.net/viewvc/impresscms/modules/protector/branches/3.20/trust_path/modules/protector/xoops_version.php?r1=4938&r2=4937&pathrev=4938
+
+	- 3.17 -> 3.20
+
+	
+Fixed
+=====
++ Adjusted work to load properly guard in impresscms?
+
+New
+===
+
+
+

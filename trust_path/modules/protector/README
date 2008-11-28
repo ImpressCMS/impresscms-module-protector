@@ -131,12 +131,26 @@ I thank Madfish for this excellent work!
 
 = CHANGES =
 
+3.2x
+- updated HTMLPurifier Library to 3.1.1 standalone (PHP5) (vaughan)
+
+3.20 (2008/09/17)
+- numbered as a stable version
+- updated language files
+-- arabic (onasre)
+- fixed language files
+-- de_utf8
+
 3.17 beta ImpressCMS 1.1 changes
 - modified postcommon_post.htmlpurify4guest.php, added condition to check if ImpressCMS htmlpurifier is loaded.
   If ImpressCMS htmlpurifier library is present then protector will use ImpressCMS library and config settings. (Vaughan)
 
 3.17 beta (2008/04/24)
 - modified URLs with the same hostname as XOOPS_URL are not counted as URI SPAM
+- updated language files
+-- persian (thx stranger and voltan) 3.17a
+- added language files
+-- de_utf8 (thx wuddel) 3.17a
 
 3.16 beta (2008/01/08)
 - added a filter postcommon_post_deny_by_httpbl for antispam by honeypotproject
@@ -273,7 +287,7 @@ Xoops Protector �ϡ�XOOPS2 ���͡��ʰ��դ��빶�⤫���
 - �̥��Х��ȹ���
 - �ǥ��쥯�ȥ��̤깶��
 - �����Ĥ��δ���CSRF (XOOPS 2.0.9.2�ʲ���¸�ߤ�������)
-- Brute Force �ʥѥ������������
+- Brute Force �ʥѥ����������������
 - ��ĥ�ҵ��������ե����륢�åץ��� (���ʤ����IE Content-Type XSS)
 - �¹Բ�ǽ�ʥե������򥢥åץ��ɤ��빶��
 - XMLRPC��Ϣ
@@ -367,8 +381,19 @@ RBL����Ͽ���줿IP���������ƤϤ��٤�SPAM�
 
 ���ѹ�����
 
+3.20 (2008/09/17)
+- �����ǤȤ��ƥС��������ֹ����դ�ľ����
+- ����ե����빹��
+-- arabic (onasre)
+- ����ե����뽤�
+-- de_utf8
+
 3.17 beta (2008/04/24)
 - URI SPAMȽ���ǡ����ۥ��Ȥ�Ʊ���ξ������̲᤹���褦�ˤ���
+- ����ե����빹��
+-- persian (thx stranger and voltan) 3.17a
+- ����ե������ɲ�
+-- de_utf8 (thx wuddel) 3.17a
 
 3.16 beta (2008/01/08)
 - SPAM�ե��륿���ɲ� postcommon_post_deny_by_httpbl (honeypotproject.org��BL����)
@@ -393,7 +418,7 @@ RBL����Ͽ���줿IP���������ƤϤ��٤�SPAM�
 -- ����¾���ͽ���������ľ��˥��å�������ɽ�������ʥ�����쥯�Ȥ����˥ե��륿��
 
 3.13 beta (2007/08/22)
-- �ե��륿���ץ饰�����򥰥��Х��ؿ��饯�饹���ѹ�
+- �ե��륿���ץ饰�����򥰥��Х��ؿ������饯�饹���ѹ�
 - �ե��륿���ݥ����Ȥ��ɲ� (badip, register)
 - �ե��륿���ץ饰�����ɲ�
 -- �桼����Ͽ����JavaScript����å����������ե��륿��(�桼����ϿSPAM�к�)
