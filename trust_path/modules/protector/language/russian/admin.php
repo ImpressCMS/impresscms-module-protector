@@ -37,7 +37,7 @@ define( "_AM_FMT_CONFIGSNOTWRITABLE" , "Сделайте каталог configs 
 define( "_AM_H3_PREFIXMAN" , "Управление префиксом таблиц" ) ;
 define( "_AM_MSG_DBUPDATED" , "База данных успешно обновлена!" ) ;
 define( "_AM_CONFIRM_DELETE" , "Все данные будут уничтожены. Продолжать?" ) ;
-define( "_AM_TXT_HOWTOCHANGEDB" , "Если вы хотите изменить префикс таблиц, отредактируйте Ваш конфигурационный файл %s/*.php вручную, внеся изменения в строку, указаную ниже.<br /><br />define('SDATA_DB_PREFIX', '<b>%s</b>');" ) ;
+define( "_AM_TXT_HOWTOCHANGEDB" , "Если вы хотите изменить префикс таблиц, отредактируйте Ваш конфигурационный файл *.php в трастовом каталоге вручную, внеся изменения в строку, указаную ниже.<br /><br />define('SDATA_DB_PREFIX', '<b>%s</b>');" ) ;
 
 
 // advisory.php
