@@ -13,7 +13,7 @@ define("_AM_TH_AGENT","Klient");
 define("_AM_TH_TYPE","Angriffstyp");
 define("_AM_TH_DESCRIPTION","Beschreibung");
 
-define( "_AM_TH_BADIPS" , "\"Schlechte\" IPs" ) ;
+define( "_AM_TH_BADIPS" , '\"Schlechte\" IP-Adresse(n)<br /><br /><span style="font-weight:normal;">Write each IP a line<br />blank means all IPs are allowed</span>' ) ;
 
 define( "_AM_TH_GROUP1IPS" , 'Erlaubte IPs für Gruppe=1<br /><br /><span style="font-weight:normal;">Jede IP in eine Zeile.<br />192.168. bedeutet 192.168.*<br />Leer Bedeutet alle IPs sind erlaubt</span>' ) ;
 
@@ -53,7 +53,4 @@ define("_AM_ADV_MAINUNPATCHED","Xoops Protector kann ihre Seite unter bestimmten
 define("_AM_ADV_SUBTITLECHECK","Überprüfen, ob Protector funktioniert");
 define("_AM_ADV_CHECKCONTAMI","Verseuchung");
 define("_AM_ADV_CHECKISOCOM","Isolierte Kommentare");
-
-
-
 ?>

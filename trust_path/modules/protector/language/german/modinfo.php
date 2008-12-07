@@ -23,6 +23,9 @@ define($constpref.'_ADMENU_MYBLOCKSADMIN','Berechtigungen') ;
 define($constpref.'_GLOBAL_DISBL','Vorübergehend deaktiviert');
 define($constpref.'_GLOBAL_DISBLDSC','Alle Sicherheitsfunktionen sind vorübergehend deaktiviert!<br />Vergessen Sie nicht diese wieder einzuschalten, wenn Sie eine Störung beseitigt haben!');
 
+define($constpref.'_DEFAULT_LANG','Voreingestellte Sprache');
+define($constpref.'_DEFAULT_LANGDSC','Geben Sie die Sprache für die Anzeige von Nachrichten bei der Verarbeitung der common.php an.');
+
 define($constpref.'_RELIABLE_IPS','Sichere IPs');
 define($constpref.'_RELIABLE_IPSDSC','Sie können IP Adressen mit einem | trennen. ^ setzt den Kopf des String, $ setzt das Ende des Strings.');
 
@@ -59,6 +62,9 @@ define($constpref.'_FILE_DOTDOTDSC','Eliminiertalle ".." aus Anfragen, die nach 
 
 define($constpref.'_BF_COUNT','Anti Brute Force');
 define($constpref.'_BF_COUNTDSC','Setzt die Anzahl der Loginversuchen von Gästen innerhalb 10 minuten. Wenn die Anzahl von Loginversuchen erreicht ist, wird die IP auf die Liste der schlechten IPs gesetzt.');
+
+define($constpref.'_BWLIMIT_COUNT','Bandbreitenbegrenzung');
+define($constpref.'_BWLIMIT_COUNTDSC','Geben Sie die maximalen Zugriffe zur mainfile.php an während der Überwachungszeit. Dieser Wert sollte 0 sein für eine normale Umgebung, die über genügend CPU-Bandbreite verfügen. Die Zahl wenniger als 10 werden ignoriert.');
 
 define($constpref.'_DOS_SKIPMODS','Module die nicht auf DoS/Crawler geprüft werden');
 define($constpref.'_DOS_SKIPMODSDSC','setzt die Verzeichnisnamen der Module, getrennt durch ein |. Diese Option ist bei Chatmodulen etc. hilfreich');
@@ -102,7 +108,5 @@ define($constpref.'_SPAMURI4U','anti-SPAM: Anzahl URLs für normale Users');
 define($constpref.'_SPAMURI4UDSC','Wenn diese Anzahl von URLs in Beiträgen von Usern (nicht Admins) gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
 define($constpref.'_SPAMURI4G','anti-SPAM: Anzahl URLs für Gäste');
 define($constpref.'_SPAMURI4GDSC','Wenn diese Anzahl von URLs in Beiträgen von Gästen gefunden wird, ist der Beitrag als Spam eingestuft. 0 bedeutet dieses Feature ist deaktiviert.');
-
 }
-
 ?>
