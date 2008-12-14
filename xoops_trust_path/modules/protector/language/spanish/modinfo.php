@@ -5,115 +5,109 @@ $constpref = '_MI_' . strtoupper( $mydirname ) ;
 
 if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 
-
-
-
-// Appended by Xoops Language Checker -GIJOE- in 2008-11-21 04:44:30
-define($constpref.'_DEFAULT_LANG','Idioma por defecto');
-define($constpref.'_DEFAULT_LANGDSC','Especifique el cÛdigo de idioma para mostrar mensajes antes de procesar common.php');
-define($constpref.'_BWLIMIT_COUNT','LimitaciÛn de carga');
-define($constpref.'_BWLIMIT_COUNTDSC','Especifique el m·ximo n˙mero de accesos a mainfile.php durante el periodo de vigilancia. Este valor deberÌa de ser 0 para entornos normales con suficiente potencia de CPU. Los n˙meros menores de 10 ser·n ignorados.');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-07-30 16:31:32
-define($constpref.'_BANIP_TIME0','Tiempo de suspensiÛn de IP (seg)');
-define($constpref.'_OPT_BIPTIME0','Bloquear la IP (moratorium)');
-define($constpref.'_DOSOPT_BIPTIME0','Bloquear la IP (moratorium)');
-
-// Appended by Xoops Language Checker -GIJOE- in 2007-03-29 03:36:14
-define($constpref.'_ADMENU_MYBLOCKSADMIN','Permisos');
-
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
-define($constpref."_NAME","Protector Xoops");
+define($constpref."_NAME","Xoops Protector");
 
 // A brief description of this module
-define($constpref."_DESC","Este mÛdulo proteje su sitio Xoops de varios tipos de ataques, como DoS , Inyecciones de SQL y contaminaciÛn de variables.");
+define($constpref."_DESC","Este m√≥dulo protege su sitio xoops de diversos ataques como DoS, Injecci√≥n SQL y contaminaci√≥n de variables.");
 
 // Menu
-define($constpref."_ADMININDEX","Centro de ProtecciÛn");
-define($constpref."_ADVISORY","Asesor de Seguridad");
-define($constpref."_PREFIXMANAGER","Administrador de Prefijos");
+define($constpref."_ADMININDEX","Centro de protecci√≥n");
+define($constpref."_ADVISORY","Asesor de seguridad");
+define($constpref."_PREFIXMANAGER","Gestor de prefijos");
+define($constpref.'_ADMENU_MYBLOCKSADMIN','Permisos') ;
 
 // Configs
-define($constpref.'_GLOBAL_DISBL','Deshabilitado temporalmente');
-define($constpref.'_GLOBAL_DISBLDSC','Todas las protecciones fueron deshabilitadas temporaralmente.<br />No olvide apagar esta opciÛn luego de resolver el problema.');
+define($constpref.'_GLOBAL_DISBL','Desactivado temporalmente');
+define($constpref.'_GLOBAL_DISBLDSC','Todas las protecciones se desactivan temporalmente.<br />No se olvide de volver a activarlo tras resolver el problema');
 
-define($constpref.'_RELIABLE_IPS','IPs confiables');
-define($constpref.'_RELIABLE_IPSDSC','Fijar IPs confiables separadas con | . ^ iguala el inicio de la serie; $ iguala el final de la serie.');
+define($constpref.'_DEFAULT_LANG','Lenguaje predeterminado');
+define($constpref.'_DEFAULT_LANGDSC','Especifique el lenguaje en el que los mensajes se mostrar√°n antes de procesar common.php');
 
-define($constpref.'_LOG_LEVEL','Nivel de registro');
+define($constpref.'_RELIABLE_IPS','IPs de confianza');
+define($constpref.'_RELIABLE_IPSDSC','Establecer IPs de confianza separadas con |<br />^ se pone al inicio de la cadena, $ se pone al final de la cadena.');
+
+define($constpref.'_LOG_LEVEL','Nivel de registro de eventos');
 define($constpref.'_LOG_LEVELDSC','');
 
+define($constpref.'_BANIP_TIME0','Tiempo (seg.) de suspensi√≥n de IP bloqueada (ban)');
+
 define($constpref.'_LOGLEVEL0','Ninguno');
-define($constpref.'_LOGLEVEL15','Callado');
-define($constpref.'_LOGLEVEL63','callado');
-define($constpref.'_LOGLEVEL255','Completo');
+define($constpref.'_LOGLEVEL15','Modo Silencioso (mas que silencio, solo alto riesgo)');
+define($constpref.'_LOGLEVEL63','modo silencioso (excluye bajo riesgo)');
+define($constpref.'_LOGLEVEL255','Todos');
 
-define($constpref.'_HIJACK_TOPBIT','Bits de IP protegidos para la sesiÛn');
-define($constpref.'_HIJACK_TOPBITDSC','Contra Secuestro de SesiÛn:<br />Por defecto 32(bit). (Todos los bits son protegidos)<br />Cuando su IP no es estable, fije el rango de IP por n˙mero de bits.<br />Por ejemplo, si su IP Puede moverse en el rango de 192.168.0.0 - 192.168.0.255, fije 24 (bits).');
-define($constpref.'_HIJACK_DENYGP','Grupos cuya IP no puede modificarse durante la sesiÛn.');
-define($constpref.'_HIJACK_DENYGPDSC','Contra Secuestro de SesiÛn:<br />Seleccione grupos cuyo IP no puede modificarse durante la sesiÛn.<br />(Recomiendo encender Administradores.)');
+define($constpref.'_HIJACK_TOPBIT','Num. bits de IP protegidos durante la sesi√≥n');
+define($constpref.'_HIJACK_TOPBITDSC','Anti-robo de sesi√≥n:<br />Por omisi√≥n: 32 bits (todos los bits protegidos)<br />Si su IP no es fija, establezca el rango de octetos seg√∫n el n√∫mero de bits.<br />Ej. est√° entre 192.168.0.0 y 192.168.0.255, ponga 24 (bits)');
+define($constpref.'_HIJACK_DENYGP','Grupos cuya IP no ha de cambiar durante la sesi√≥n');
+define($constpref.'_HIJACK_DENYGPDSC','Anti-robo de sesi√≥n:<br />Seleccione los grupos cuyos usuarios tienen prohibido que su IP cambie durante la sesi√≥n.<br />(Recomendado activar Administradores)');
 define($constpref.'_SAN_NULLBYTE','Limpiar bytes nulos');
-define($constpref.'_SAN_NULLBYTEDSC','El caracter de terminaciÛn "\\0" con frecuencia es empleado en ataques maliciosos.<br />Los bytes nulos ser·n cambiados por un espacio.<br />(Altamente recomendado: Encender)');
-define($constpref.'_DIE_NULLBYTE','Salir si se detectan bytes nulos');
-define($constpref.'_DIE_NULLBYTEDSC','El caracter de terminaciÛn "\\0" con frecuencia es empleado en ataques maliciosos.<br />(Altamente recomendado: Encender)');
-define($constpref.'_DIE_BADEXT','Salir si se suben archivos malignos');
-define($constpref.'_DIE_BADEXTDSC','Si alguien trata de subir archivos con extensiones prohibidas como .php , este mÛdulo lo saca de su sitio XOOPS.<br />Si con frecuencia agrega archivos php en mÛdulos como B-Wiki o PukiWikiMod, apague esta opciÛn.');
-define($constpref.'_CONTAMI_ACTION','AcciÛn al detectar una contaminaciÛn.');
-define($constpref.'_CONTAMI_ACTIONDS','Seleccione la acciÛn frente a una contaminaciÛn de variables globales del sistema en su sitio XOOPS.<br />(OpciÛn recomendada: pantalla en blanco)');
-define($constpref.'_ISOCOM_ACTION','AcciÛn al detectar un comentario aislado');
-define($constpref.'_ISOCOM_ACTIONDSC','Contra InyecciÛn de SQL:<br />Seleccione la acciÛn cuando se detecte una "/*" aislada.<br />"Limpieza" significa agregar otra "*/" al final.<br />(OpciÛn recomendada: Limpieza)');
-define($constpref.'_UNION_ACTION','AcciÛn al detectar una UNION');
-define($constpref.'_UNION_ACTIONDSC','Contra InyecciÛn de SQL:<br />Seleccione la acciÛn al detectar alguna sintaxis como UNION de SQL.<br />"Limpieza" significa cambiar "union" a "uni-on".<br />(OpciÛn recomendada: Limpieza)');
-define($constpref.'_ID_INTVAL','Forzar intervalo a variables como id');
-define($constpref.'_ID_INTVALDSC','Todas las peticiones llamadas "*id" ser·n tratadas como n˙mero entero.<br />Esta opciÛn le protege contra algunos ataques XSS e Inyecciones de SQL.<br />Aunque recomiendo activar esta opciÛn, puede causar problemas con algunos mÛdulos.');
-define($constpref.'_FILE_DOTDOT','ProtecciÛn contra TravesÌas de Directorio');
-define($constpref.'_FILE_DOTDOTDSC','Elimina ".." de todas las peticiones que parezcan TravesÌa de Directorio.');
+define($constpref.'_SAN_NULLBYTEDSC','El car√°cter de terminaci√≥n "\\0" se usa con frecuencia en ataques malintencionados.<br />El car√°cter de byte nulo se sustituye por un espacio.<br />(Muy recomendado: S√≠)');
+define($constpref.'_DIE_NULLBYTE','Cerrar sesi√≥n si se detectan bytes nulos');
+define($constpref.'_DIE_NULLBYTEDSC','El car√°cter de terminaci√≥n "\\0" se usa con frecuencia en ataques malintencionados.<br />(Muy recomendado: S√≠)');
+define($constpref.'_DIE_BADEXT','Cerrar sesi√≥n si se suben ficheros peligrosos');
+define($constpref.'_DIE_BADEXTDSC','Si alguien intenta subir ficheros con extensiones peligrosas como .php, este m√≥dulo le saca de su sitio XOOPS.<br />Si a menudo usted mismo adjunta ficheros php en m√≥dulos como B-Wiki o PukiWikiMod, p√≥ngala en No.');
+define($constpref.'_CONTAMI_ACTION','Acci√≥n al detectar una contaminaci√≥n de variables.');
+define($constpref.'_CONTAMI_ACTIONDS','Acci√≥n cuando alguien intenta contaminar las variables globales del sistema dentro de XOOPS.<br />(Recomendado: pantalla en blanco)');
+define($constpref.'_ISOCOM_ACTION','Acci√≥n al detectar un comentario solitario');
+define($constpref.'_ISOCOM_ACTIONDSC','Anti-inyecci√≥n SQL:<br />acci√≥n al detectar un "/*" solitario.<br />La opci√≥n "Limpieza" agrega otra "*/" al final.<br />(Recomendado: Limpieza)');
+define($constpref.'_UNION_ACTION','Acci√≥n al detectar una UNION');
+define($constpref.'_UNION_ACTIONDSC','Anti-inyecci√≥n SQL:<br />acci√≥n al detectar alguna sintaxis de SQL como UNION.<br />La opci√≥n "Limpieza" cambia "union" por "uni-on".<br />(Recomendado: Limpieza)');
+define($constpref.'_ID_INTVAL','Fijar variables tipo ID a n√∫m. entero (intval)');
+define($constpref.'_ID_INTVALDSC','Todas las peticiones con nombre "*id" se tratan como un entero (integer).<br />Esta opci√≥n le protege contra algunos ataques XSS e inyecciones SQL.<br />Aunque recomiendo activar esta opci√≥n, puede causar problemas con algunos m√≥dulos.');
+define($constpref.'_FILE_DOTDOT','Protecci√≥n contra saltos de directorio');
+define($constpref.'_FILE_DOTDOTDSC','Elimina ".." de todas las peticiones que parezcan saltos de directorio');
 
-define($constpref.'_BF_COUNT','Contra Fuerza Bruta');
-define($constpref.'_BF_COUNTDSC','Fija la cantidad de veces que un anÛnimo intenta darse de alta en 10 minutos. Si alguien no puede darse de alta en esta cantidad de ocasiones, su IP ser· bloqueada.');
+define($constpref.'_BF_COUNT','Anti-fuerza bruta');
+define($constpref.'_BF_COUNTDSC','Establece la cantidad permitida de intentos de inicio de sesi√≥n a un an√≥nimo durante 10 minutos. Si no la inicia, se bloquea su IP.');
 
-define($constpref.'_DOS_SKIPMODS','MÛdulos exentos de revisiÛn DoS/Crawler');
-define($constpref.'_DOS_SKIPMODSDSC','Fija los dirnames de los mÛdulos separados con |. Esta opciÛn es ˙til con mÛdulos de chat, etc.');
+define($constpref.'_BWLIMIT_COUNT','Limitaci√≥n de ancho de banda');
+define($constpref.'_BWLIMIT_COUNTDSC','Especifique el acceso m√°ximo al archivo mainfile.php durante un per√≠odo de tiempo. Este valor deber√≠a ser 0 para entornos normales con bastante potencia de CPU. Valores m√°s bajos que 10 ser√°n ignorados.');
 
-define($constpref.'_DOS_EXPIRE','Tiempo de vigilancia para cargas frecuentes (segundos)');
-define($constpref.'_DOS_EXPIREDSC','Este valor especifica el tiempo de vigilancia para cargas frecuentes (Ataque F5) y crawlers de subidas frecuentes.');
+define($constpref.'_DOS_SKIPMODS','Modules exentos de comprobaci√≥n DoS y Crawler');
+define($constpref.'_DOS_SKIPMODSDSC','Directorios de los m√≥dulos, separados con |. En esta opci√≥n es conveniente incluir los m√≥dulos de chat, etc.');
 
-define($constpref.'_DOS_F5COUNT','Conteo lÌmite para Ataque F5');
-define($constpref.'_DOS_F5COUNTDSC','PrevenciÛn de ataques DoS.<br />Este valor especifica el conteo de recargas para ser considerado como un ataque malicioso.');
-define($constpref.'_DOS_F5ACTION','AcciÛn contra Ataque F5');
+define($constpref.'_DOS_EXPIRE','Tiempo de observaci√≥n de recargas reiteradas (seg.)');
+define($constpref.'_DOS_EXPIREDSC','Este valor especifica el tiempo de observaci√≥n para peticiones de recarga muy frecuentes (ataque F5) y rastreos reiterados de crawlers.');
 
-define($constpref.'_DOS_CRCOUNT','Conteo lÌmite para Crawlers');
-define($constpref.'_DOS_CRCOUNTDSC','PrevenciÛn contra crawlers de carga frecuente.<br />Este valor especifica el conteo de accesos para ser considerados como un crawler malicioso.');
-define($constpref.'_DOS_CRACTION','AcciÛn contra Crawlers de carga frecuente');
+define($constpref.'_DOS_F5COUNT','Contador para ser considerado ataque F5');
+define($constpref.'_DOS_F5COUNTDSC','Prevenci√≥n contra ataques DoS.<br />Este valor especifica el n√∫mero de peticiones de recarga para ser considerado un ataque malintencionado.');
+define($constpref.'_DOS_F5ACTION','Acciones contra ataques F5');
 
-define($constpref.'_DOS_CRSAFE','Agente-Usuario bienvenido');
-define($constpref.'_DOS_CRSAFEDSC','Un patrÛn de perl regex para Agente-Usuario.<br />Si concuerda, el crawler nunca es considerado como de carga frecuente.<br />Por ejemplo: /(msnbot|Googlebot|Yahoo! Slurp)/i');
+define($constpref.'_DOS_CRCOUNT','Contador para ser considerado ataque Crawler');
+define($constpref.'_DOS_CRCOUNTDSC','Prevenci√≥n contra crawlers de rastreo reiterado.<br />Este valor especifica la cantidad de accesos para ser considerados un crawler malintencionado.');
+define($constpref.'_DOS_CRACTION','Acci√≥n contra Crawlers de rastreo reiterado');
 
-define($constpref.'_OPT_NONE','Ninguna (sÛlo registro)');
+define($constpref.'_DOS_CRSAFE','User-Agent bienvenidos');
+define($constpref.'_DOS_CRSAFEDSC','Patr√≥n perl-regex para User-Agent.<br />Si concuerda, el crawler no se considera nunca un rastreador malintencionado.<br />Ej. /(msnbot|Googlebot|Yahoo! Slurp)/i');
+
+define($constpref.'_OPT_NONE','Nada (solo registra evento)');
 define($constpref.'_OPT_SAN','Limpieza');
-define($constpref.'_OPT_EXIT','Pantalla en Blanco');
-define($constpref.'_OPT_BIP','Bloquear IP');
+define($constpref.'_OPT_EXIT','Pantalla en blanco');
+define($constpref.'_OPT_BIP','Bloquear IP (sin final)');
+define($constpref.'_OPT_BIPTIME0','Bloquear IP (por un tiempo)');
 
-define($constpref.'_DOSOPT_NONE','Ninguna (sÛlo registro)');
-define($constpref.'_DOSOPT_SLEEP','Dormir');
-define($constpref.'_DOSOPT_EXIT','Pantalla en Blanco');
-define($constpref.'_DOSOPT_BIP','Bloquear IP');
-define($constpref.'_DOSOPT_HTA','NEGAR por .htaccess (experimental)');
+define($constpref.'_DOSOPT_NONE','Nada (solo registra evento)');
+define($constpref.'_DOSOPT_SLEEP','Inactividad');
+define($constpref.'_DOSOPT_EXIT','Pantalla en blanco');
+define($constpref.'_DOSOPT_BIP','Bloquear IP (sin final)');
+define($constpref.'_DOSOPT_BIPTIME0','Bloquear IP (por un tiempo)');
+define($constpref.'_DOSOPT_HTA','DENY a trav√©s de .htaccess (experimental)');
 
-define($constpref.'_BIP_EXCEPT','Grupos nunca registrados como IP Malicioso');
-define($constpref.'_BIP_EXCEPTDSC','Un usuario que pertenece al grupo especificado aquÌ jam·s ser· bloqueado.<br />(Recomiendo activar al Administrador.)');
+define($constpref.'_BIP_EXCEPT','Grupos nunca considerados con IP maliciosa');
+define($constpref.'_BIP_EXCEPTDSC','Un usuario que pertenece al grupo indicado jam√°s ser√° bloqueado.<br />(Recomiendo activar el de Administradores)');
 
-define($constpref.'_DISABLES','Deshabilita caracterÌsticas peligrosas de XOOPS');
+define($constpref.'_DISABLES','Deshabilitar caracter√≠sticas peligrosas de XOOPS');
 
 define($constpref.'_BIGUMBRELLA','Habilitar anti-XSS (BigUmbrella)');
-define($constpref.'_BIGUMBRELLADSC','Esto protege de casi cualquier ataque vÌa vulnerabilidades XSS. Pero no al 100%');
+define($constpref.'_BIGUMBRELLADSC','Esto le protege de casi cualquier ataque v√≠a vulnerabilidades XSS. Pero no al 100%');
 
-define($constpref.'_SPAMURI4U','Contra SPAM: URLs para usuarios normales');
-define($constpref.'_SPAMURI4UDSC','Si esta cantidad de URLs es hallada en datos ENVIADOS por usuarios diferentes al Administrador, el ENVÕO es considerado como SPAM. Cero (0) significa deshabilitar esta caracterÌstica.');
-define($constpref.'_SPAMURI4G','Contra SPAM: URLs para anÛnimos');
-define($constpref.'_SPAMURI4GDSC','Si esta cantidad de URLs es hallada en datos ENVIADOS por anÛnimos, el ENVÕO es considerado como SPAM. Cero (0) significa deshabilitar esta caracterÌstica.');
+define($constpref.'_SPAMURI4U','Anti-SPAM: URL de usuarios registrados');
+define($constpref.'_SPAMURI4UDSC','Si esa cantidad de URL se encuentran en los datos de un POST de un usuario registrado que no sea administrador, el POST se considera SPAM. Cero (0) deshabilita esta caracter√≠stica.');
+define($constpref.'_SPAMURI4G','Anti-SPAM: URLs de usuarios an√≥nimos');
+define($constpref.'_SPAMURI4GDSC','Si esa cantidad de URL se encuentran en los datos de un POST de un usuario an√≥nimo, el POST se considera SPAM. Cero (0) deshabilita esta caracter√≠stica.');
 
 }
 
