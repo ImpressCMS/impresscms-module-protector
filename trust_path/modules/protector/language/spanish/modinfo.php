@@ -8,10 +8,10 @@ if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( $constpref.'_LOADED' ) ) {
 define( $constpref.'_LOADED' , 1 ) ;
 
 // The name of this module
-define($constpref."_NAME","Protector");
+define($constpref."_NAME","Xoops Protector");
 
 // A brief description of this module
-define($constpref."_DESC","Este módulo protege su sitio ImpressCMS de diversos ataques como DoS, Injección SQL y contaminación de variables.");
+define($constpref."_DESC","Este módulo protege su sitio xoops de diversos ataques como DoS, Injección SQL y contaminación de variables.");
 
 // Menu
 define($constpref."_ADMININDEX","Centro de protección");
@@ -22,6 +22,9 @@ define($constpref.'_ADMENU_MYBLOCKSADMIN','Permisos') ;
 // Configs
 define($constpref.'_GLOBAL_DISBL','Desactivado temporalmente');
 define($constpref.'_GLOBAL_DISBLDSC','Todas las protecciones se desactivan temporalmente.<br />No se olvide de volver a activarlo tras resolver el problema');
+
+define($constpref.'_DEFAULT_LANG','Lenguaje predeterminado');
+define($constpref.'_DEFAULT_LANGDSC','Especifique el lenguaje en el que los mensajes se mostrarán antes de procesar common.php');
 
 define($constpref.'_RELIABLE_IPS','IPs de confianza');
 define($constpref.'_RELIABLE_IPSDSC','Establecer IPs de confianza separadas con |<br />^ se pone al inicio de la cadena, $ se pone al final de la cadena.');
@@ -60,6 +63,9 @@ define($constpref.'_FILE_DOTDOTDSC','Elimina ".." de todas las peticiones que pa
 define($constpref.'_BF_COUNT','Anti-fuerza bruta');
 define($constpref.'_BF_COUNTDSC','Establece la cantidad permitida de intentos de inicio de sesión a un anónimo durante 10 minutos. Si no la inicia, se bloquea su IP.');
 
+define($constpref.'_BWLIMIT_COUNT','Limitación de ancho de banda');
+define($constpref.'_BWLIMIT_COUNTDSC','Especifique el acceso máximo al archivo mainfile.php durante un período de tiempo. Este valor debería ser 0 para entornos normales con bastante potencia de CPU. Valores más bajos que 10 serán ignorados.');
+
 define($constpref.'_DOS_SKIPMODS','Modules exentos de comprobación DoS y Crawler');
 define($constpref.'_DOS_SKIPMODSDSC','Directorios de los módulos, separados con |. En esta opción es conveniente incluir los módulos de chat, etc.');
 
@@ -93,7 +99,7 @@ define($constpref.'_DOSOPT_HTA','DENY a través de .htaccess (experimental)');
 define($constpref.'_BIP_EXCEPT','Grupos nunca considerados con IP maliciosa');
 define($constpref.'_BIP_EXCEPTDSC','Un usuario que pertenece al grupo indicado jamás será bloqueado.<br />(Recomiendo activar el de Administradores)');
 
-define($constpref.'_DISABLES','Deshabilitar características peligrosas');
+define($constpref.'_DISABLES','Deshabilitar características peligrosas de XOOPS');
 
 define($constpref.'_BIGUMBRELLA','Habilitar anti-XSS (BigUmbrella)');
 define($constpref.'_BIGUMBRELLADSC','Esto le protege de casi cualquier ataque vía vulnerabilidades XSS. Pero no al 100%');
